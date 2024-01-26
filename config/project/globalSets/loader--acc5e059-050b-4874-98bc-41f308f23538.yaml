@@ -1,0 +1,58 @@
+fieldLayouts:
+  cece7ec3-ee28-45ea-95b4-954ebc94c22d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 32d5b2cd-e8c9-48ab-b9a0-3ffda7745a4c
+            instructions: null
+            label: 'First line'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f01d3068-d173-42fb-ac73-b8ce063e9bbd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 848133f5-fb1b-4b68-952e-b4b5cf73b9cf
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: d5e64a42-6dbd-48d7-97c0-f8b104261223
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb0043a8-05d6-4fd5-9a8f-1b07a31f9c20
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 3ebc6aba-78ae-4b9e-9536-930cfee17fd9
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 3241d835-11d3-4329-b3b8-1be55fb79a3d
+            instructions: null
+            label: 'Third line'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01a6a304-8a23-4d17-ad32-5868c191fb1f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 415b32d9-9334-4059-ad0f-03187ab01164
+        userCondition: null
+handle: loader
+name: Loader
+sortOrder: 4

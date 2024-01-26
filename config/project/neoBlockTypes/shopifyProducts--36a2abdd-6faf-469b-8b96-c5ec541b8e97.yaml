@@ -1,0 +1,104 @@
+childBlocks: null
+conditions:
+  craft\elements\Category:
+    class: craft\elements\conditions\categories\CategoryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\categories\GroupConditionRule
+        operator: ni
+        uid: 3313851e-2671-45af-976d-1cf50ac55ea1
+        values:
+          - ba5b7401-275f-4952-92bb-3565a2ee93ae # Industry
+          - 9d8f857d-348e-43fb-9987-914354d04ac1 # Project type
+          - 75febb45-c75f-4d73-842b-63c42bc30f17 # Technology
+    elementType: craft\elements\Category
+    fieldContext: global
+  craft\elements\Entry:
+    class: craft\elements\conditions\entries\EntryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\entries\TypeConditionRule
+        operator: ni
+        uid: 999b8b62-e868-42e0-b148-ba53c9b440f6
+    elementType: craft\elements\Entry
+    fieldContext: global
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  71c45923-be97-4c19-b660-64b9089b537d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6f9a4073-8da2-4ca3-bbab-b6fc385a8965
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dcd0c696-e892-4832-bd24-63fe0624a51a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f97da99-2152-4c3f-88e2-2c51f5edfad4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71124f44-b1c0-4dca-a78c-ea975cdb02c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: 'The background image will get mega blurry'
+            type: craft\fieldlayoutelements\Heading
+            uid: d1180340-f96e-4efe-9bb0-e05d6bce8ebb
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 8dc1d25a-3e67-40c0-9cc6-661f8ec49d84
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7ffcd0e-34e2-46dc-97a3-89d149211c0b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e6b68527-98db-4f10-aea1-0670e368b3ab
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ce7c8365-5551-4565-be13-8f2647d2c720
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 3e03ecf5-e2c4-4a43-a296-a679aaa89a28
+        userCondition: null
+group: null
+groupChildBlockTypes: false
+handle: shopifyProducts
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Shopify Products'
+sortOrder: 4
+topLevel: true

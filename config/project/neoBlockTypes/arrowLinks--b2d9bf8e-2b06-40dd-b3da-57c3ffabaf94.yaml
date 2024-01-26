@@ -1,0 +1,62 @@
+childBlocks: null
+conditions:
+  craft\elements\Category:
+    class: craft\elements\conditions\categories\CategoryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\categories\GroupConditionRule
+        operator: ni
+        uid: b5626d04-946c-42db-8ee5-a62507333ec7
+        values:
+          - ba5b7401-275f-4952-92bb-3565a2ee93ae # Industry
+          - 9d8f857d-348e-43fb-9987-914354d04ac1 # Project type
+          - 75febb45-c75f-4d73-842b-63c42bc30f17 # Technology
+    elementType: craft\elements\Category
+    fieldContext: global
+  craft\elements\Entry:
+    class: craft\elements\conditions\entries\EntryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\entries\TypeConditionRule
+        operator: ni
+        uid: 29a7c8c1-2052-46b2-bac4-b77f55490949
+    elementType: craft\elements\Entry
+    fieldContext: global
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  935b2a63-253b-4d5e-96df-4dbaaa96af5b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 410758fc-ab24-44cb-8e07-4508edca4dcd
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79c8637b-caac-47aa-89d6-1ce2f8d8006b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: a7ddc302-0594-4ad8-a5e1-b2247da794d9
+        userCondition: null
+group: 6cf02784-36ae-41ab-adbd-a984ca016b7a # Column content
+groupChildBlockTypes: true
+handle: arrowLinks
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Arrow links'
+sortOrder: 27
+topLevel: false

@@ -1,0 +1,38 @@
+{
+  "buttons": [
+    "html",
+    "formatting",
+    "bold",
+    "italic",
+    "unorderedlist",
+    "orderedlist",
+    "link"
+  ],
+  "plugins": ["linkclass"],
+  "linkClasses": [
+    {
+      "label": "CTA - In text",
+      "class": "text-button-label cta-in-text"
+    }
+  ],
+  "linkNewTab": true,
+  "formatting": [],
+  "formattingAdd": {
+    "heading": {
+      "title": "Heading",
+      "api": "module.block.format",
+      "args": {
+        "tag": "h4",
+        "class": "text-subhead"
+      }
+    },
+    "body": {
+      "title": "Body",
+      "api": "module.block.format",
+      "args": {
+        "tag": "p",
+        "class": "text-body"
+      }
+    }
+  }
+}

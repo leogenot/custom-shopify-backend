@@ -1,0 +1,124 @@
+defaultPlacement: end
+fieldLayouts:
+  ae5b9529-94fe-45e2-a116-de510b67d43e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: ec9a2d23-3abf-44c7-968d-67ddd19ad860
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f97da99-2152-4c3f-88e2-2c51f5edfad4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4daa0dc-2a94-49bb-bd2a-ae445636d936
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed621383-303f-474c-9fcf-04510832f1b4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3265562c-9289-4438-946e-26fa7c296dfe
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7f80d9a6-6940-4531-8c59-9ed427fef9e1 # Theme
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96f143df-0a0e-448f-8842-4020e1e34c08
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: 77a73662-d15f-4077-9b14-8d11a9eb2732
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a23b649c-0d4f-4108-9164-65c931a37763 # Widget
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 553b50de-0631-4122-9a10-9ee6f39f3c5b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Widgets
+        uid: 16f7a92b-e1cc-4543-acaf-621ea6a544c6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6f9a4073-8da2-4ca3-bbab-b6fc385a8965
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f957603a-e040-4961-b241-d3e0913372f2
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 917d3c02-81b2-4084-b3b0-e0a41954440e
+        userCondition: null
+handle: projectType
+name: 'Project type'
+siteSettings:
+  78edf4a1-21b0-45a9-8a95-b3167b02af19: # springsummer
+    hasUrls: true
+    template: null
+    uriFormat: 'category/{slug}'
+structure:
+  maxLevels: null
+  uid: 47dc82fc-7cef-4a9f-be5d-8f881bc1cf95

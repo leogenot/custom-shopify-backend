@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  37b443d5-7a26-45a5-bfeb-bcec8be1d339:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'The newsletter form will be added to the page'
+            type: craft\fieldlayoutelements\Tip
+            uid: 7e4eca92-1832-4e67-b0d5-f59508004392
+            userCondition: null
+        name: Default
+        uid: 542b9fb2-b433-40d3-82f1-715102d5a155
+        userCondition: null
+group: 6cf02784-36ae-41ab-adbd-a984ca016b7a # Column content
+groupChildBlockTypes: true
+handle: newsletter
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Newsletter
+sortOrder: 16
+topLevel: false

@@ -1,0 +1,136 @@
+childBlocks:
+  - column
+  - heroImageV2
+  - overlayedItem
+  - carousel
+  - backgroundForeground
+  - comingSoon
+  - linkList
+conditions: null
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  2f1fe821-e3e0-4fa8-b966-dcd059861f3a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 9d3baa6f-413d-4ccc-b2bf-bbe8649cad97
+            userCondition: null
+        name: Default
+        uid: ffa00617-d3c0-4f88-b9dc-56c3de9e3960
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a23b649c-0d4f-4108-9164-65c931a37763 # Widget
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c613b0c6-463a-4cc2-909b-f951b20fe117
+            userCondition: null
+            warning: null
+            width: 100
+        name: Widgets
+        uid: cc088d95-f177-45f5-936e-6d88c00d927f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7f80d9a6-6940-4531-8c59-9ed427fef9e1 # Theme
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 982a07d2-14cc-479f-9085-1dd0fe12fea1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3bf11ede-bec9-4a2e-b23d-ae6eb44a59f1
+            instructions: 'Used for removing horizontal margins, when making fullscreen rows f.ex'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a645e16-0b95-48ca-9327-bb7715a5e781
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3b7ccd03-b55f-4410-9712-1a9f5610aa54
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dcac2fbf-daf5-42c4-b8ad-049505971062
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cbf998fa-9b85-4d81-8836-6949a83a7587
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86a58371-018a-4918-a8e3-6daedcd3a4a9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4e2bd9e0-e192-495f-b8be-b0c531bda0f8
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 53acd5c1-bae2-4601-97a4-f32868a7abe2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6ef15c05-012a-4131-b0da-670af6ff8e32
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a81dba2e-c01c-4995-b7a1-5d720e682ba4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: 3cb4d3bb-fde1-4eef-9886-75fe90b6178b
+        userCondition: null
+group: null
+groupChildBlockTypes: false
+handle: row
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Row
+sortOrder: 1
+topLevel: true

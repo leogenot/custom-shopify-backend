@@ -1,0 +1,122 @@
+childBlocks:
+  - overlayedItem
+conditions:
+  craft\elements\Category:
+    class: craft\elements\conditions\categories\CategoryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\categories\GroupConditionRule
+        operator: ni
+        uid: 92bcdc40-222e-48ea-8178-0e5d983f09d2
+        values:
+          - ba5b7401-275f-4952-92bb-3565a2ee93ae # Industry
+          - 9d8f857d-348e-43fb-9987-914354d04ac1 # Project type
+          - 75febb45-c75f-4d73-842b-63c42bc30f17 # Technology
+    elementType: craft\elements\Category
+    fieldContext: global
+  craft\elements\Entry:
+    class: craft\elements\conditions\entries\EntryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\entries\TypeConditionRule
+        operator: ni
+        uid: 9a5cb234-a6e5-407a-ae78-fb84d647211f
+    elementType: craft\elements\Entry
+    fieldContext: global
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  81d76426-5c88-496a-9323-3bd1a34accfd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3d0a153d-7cf3-4fd2-a96a-ca47645e79df
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c105f3c-2872-48ec-8bb5-281c6baaea4f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4ce0d561-b653-4fac-ad89-cfc3ada863c6
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7480174f-f2f4-439b-9644-4398aa2e3282
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 5094e5bb-026b-4b8c-929a-6891fe7b30bd
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7f80d9a6-6940-4531-8c59-9ed427fef9e1 # Theme
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cfc1716-99b6-4948-b49e-9d94c3e61b0b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: cec5bab9-7c4c-48b3-9bcb-08dbb06d23f9
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 3b7ccd03-b55f-4410-9712-1a9f5610aa54
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a85f8e3d-3eee-48ba-b593-baffffe96f97
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4e2bd9e0-e192-495f-b8be-b0c531bda0f8
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11509a54-1cfd-491f-aa64-f7cb3a7f17d1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: 40d97142-e7dd-463e-88ee-18fcc15cc08d
+        userCondition: null
+group: null
+groupChildBlockTypes: false
+handle: heroBigBang
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Hero - big-bang'
+sortOrder: 3
+topLevel: true

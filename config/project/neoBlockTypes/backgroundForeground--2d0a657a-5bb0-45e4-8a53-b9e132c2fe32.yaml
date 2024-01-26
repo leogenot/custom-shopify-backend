@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  25009806-ac9f-4542-8c25-2fdef4cea196:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 172c8fc1-1042-48be-b81c-8e08b6d4cbca
+            instructions: '(for fullscreen backgrounds, remember to set the row bleed to "none")'
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 312966c1-392a-4d95-a2cc-61b2d2f95c67
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 8791e271-191b-46e5-a2cf-53d0aa450fa3
+        userCondition: null
+group: de9d2109-ce8f-4710-b27c-9a2d6be8fc0b # Row content
+groupChildBlockTypes: true
+handle: backgroundForeground
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Background foreground'
+sortOrder: 11
+topLevel: false

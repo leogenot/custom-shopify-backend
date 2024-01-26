@@ -1,0 +1,100 @@
+childBlocks:
+  - nestedColumn
+conditions: null
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  32109b2b-a1e1-4b13-98da-35e681647e20:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 9d3baa6f-413d-4ccc-b2bf-bbe8649cad97
+            userCondition: null
+        name: Default
+        uid: 93f97747-6123-46a0-b913-88d03ad3413f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3bf11ede-bec9-4a2e-b23d-ae6eb44a59f1
+            instructions: 'Used for removing horizontal margins, when making fullscreen rows f.ex'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a645e16-0b95-48ca-9327-bb7715a5e781
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3b7ccd03-b55f-4410-9712-1a9f5610aa54
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dcac2fbf-daf5-42c4-b8ad-049505971062
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cbf998fa-9b85-4d81-8836-6949a83a7587
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86a58371-018a-4918-a8e3-6daedcd3a4a9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4e2bd9e0-e192-495f-b8be-b0c531bda0f8
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 53acd5c1-bae2-4601-97a4-f32868a7abe2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6ef15c05-012a-4131-b0da-670af6ff8e32
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a81dba2e-c01c-4995-b7a1-5d720e682ba4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Settings
+        uid: 0fcc7df4-e0e7-41ae-8259-0053c6c6543e
+        userCondition: null
+group: de9d2109-ce8f-4710-b27c-9a2d6be8fc0b # Row content
+groupChildBlockTypes: false
+handle: nestedRow
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Nested Row'
+sortOrder: 13
+topLevel: false

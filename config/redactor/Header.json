@@ -1,0 +1,12 @@
+{
+  "buttons": ["link"],
+  "plugins": ["linkclass"],
+  "linkClasses": [
+    {
+      "label": "CTA - Header",
+      "class": "text-button-label cta-header"
+    }
+  ],
+  "linkNewTab": true,
+  "formatting": []
+}

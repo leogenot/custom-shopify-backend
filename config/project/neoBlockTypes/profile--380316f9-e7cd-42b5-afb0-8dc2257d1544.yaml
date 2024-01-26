@@ -1,0 +1,86 @@
+childBlocks: null
+conditions:
+  craft\elements\Category:
+    class: craft\elements\conditions\categories\CategoryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\categories\GroupConditionRule
+        operator: ni
+        uid: d2f4d600-474c-4ff8-bb9e-7aee3c0acad5
+        values:
+          - ba5b7401-275f-4952-92bb-3565a2ee93ae # Industry
+          - 9d8f857d-348e-43fb-9987-914354d04ac1 # Project type
+          - 75febb45-c75f-4d73-842b-63c42bc30f17 # Technology
+    elementType: craft\elements\Category
+    fieldContext: global
+  craft\elements\Entry:
+    class: craft\elements\conditions\entries\EntryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\entries\TypeConditionRule
+        operator: ni
+        uid: b335e30a-6c2e-43bc-b905-5359743a37c6
+    elementType: craft\elements\Entry
+    fieldContext: global
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  b0f09e57-f181-48b6-ae48-7e1eaad9ba50:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 32d5b2cd-e8c9-48ab-b9a0-3ffda7745a4c
+            instructions: null
+            label: Name
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff47f61e-4a4e-4abf-95d2-3c156da762c7
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: eef8323c-7240-4246-be5b-6cc0dd6891e6 # Trumpet
+            instructions: null
+            label: Position
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b6e1ae1-b5a7-4f2b-98cc-9f4aeaf2320b
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: 6f9a4073-8da2-4ca3-bbab-b6fc385a8965
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d453fd7-5d21-47cb-90e6-ea63f2e70829
+            userCondition: null
+            warning: null
+            width: 25
+        name: Profile
+        uid: 39765959-c0b2-4162-b6ef-025300696ea2
+        userCondition: null
+group: 6cf02784-36ae-41ab-adbd-a984ca016b7a # Column content
+groupChildBlockTypes: true
+handle: profile
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Profile
+sortOrder: 28
+topLevel: false

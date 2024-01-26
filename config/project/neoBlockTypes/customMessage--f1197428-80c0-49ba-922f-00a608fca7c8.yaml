@@ -1,0 +1,36 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  9b0c8ccf-e519-4574-b6e0-5a34e4505fa6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'use newsletter.customMessage in globals>language to set a custom page message'
+            type: craft\fieldlayoutelements\Tip
+            uid: ec108016-343b-4a72-a2b6-d68f0829f598
+            userCondition: null
+        name: Default
+        uid: 3048a953-a49c-47b9-94d1-99c99fd99c8d
+        userCondition: null
+group: 6cf02784-36ae-41ab-adbd-a984ca016b7a # Column content
+groupChildBlockTypes: true
+handle: customMessage
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Custom message'
+sortOrder: 17
+topLevel: false

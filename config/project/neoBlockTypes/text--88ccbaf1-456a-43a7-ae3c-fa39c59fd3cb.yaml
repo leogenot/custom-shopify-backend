@@ -1,0 +1,62 @@
+childBlocks: null
+conditions:
+  craft\elements\Category:
+    class: craft\elements\conditions\categories\CategoryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\categories\GroupConditionRule
+        operator: ni
+        uid: e8548f7b-42ab-442a-a7f9-fb937851a93f
+        values:
+          - ba5b7401-275f-4952-92bb-3565a2ee93ae # Industry
+          - 9d8f857d-348e-43fb-9987-914354d04ac1 # Project type
+          - 75febb45-c75f-4d73-842b-63c42bc30f17 # Technology
+    elementType: craft\elements\Category
+    fieldContext: global
+  craft\elements\Entry:
+    class: craft\elements\conditions\entries\EntryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\entries\TypeConditionRule
+        operator: ni
+        uid: 1a6b1cf1-0c75-4d13-bf4a-45a0e97b43fc
+    elementType: craft\elements\Entry
+    fieldContext: global
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  e8e33e50-f0c2-4e90-b821-15116c072925:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5f97da99-2152-4c3f-88e2-2c51f5edfad4
+            instructions: null
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd68da72-2c4c-4566-8391-1779ac960330
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 8503caf6-26cd-40ee-8c76-c6f2c42adb1f
+        userCondition: null
+group: 6cf02784-36ae-41ab-adbd-a984ca016b7a # Column content
+groupChildBlockTypes: true
+handle: text
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Text
+sortOrder: 19
+topLevel: false

@@ -1,0 +1,415 @@
+dateModified: 1706277062
+elementSources:
+  craft\elements\Asset:
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'volume:8a3b25bc-ffee-4b7b-9cfd-a1496def68a2' # Default
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      key: 'folder:2aac6cde-4a0f-4918-be9a-fd73d47c308b'
+      type: native
+    -
+      condition:
+        class: craft\elements\conditions\assets\AssetCondition
+        elementType: craft\elements\Asset
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      key: 'custom:ff77246a-c103-4d8b-9c49-5829db47294e'
+      label: SVG
+      tableAttributes: '-'
+      type: custom
+    -
+      condition:
+        class: craft\elements\conditions\assets\AssetCondition
+        elementType: craft\elements\Asset
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      key: 'custom:f7c532b2-9ac7-450d-80d4-244dcd4bd780'
+      label: Icons
+      tableAttributes: '-'
+      type: custom
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      key: 'section:a3860ab9-0fc7-4789-9613-665077239dd2'
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:8a87e96f-2e88-453a-9948-641953d6bc41'
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:8b586412-160e-41b2-8448-e4696390ca5b'
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:c70bf687-8f35-4f9b-bd81-e376c13e6ae9' # Menu
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      heading: 'Sandbox / Documentation'
+      type: heading
+    -
+      heading: 'Internal documentation'
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:69c662fc-9605-4523-92fc-42600a4db3d5'
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: ''
+      type: heading
+email:
+  fromEmail: et@springsummer.dk
+  fromName: springsummer
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  default:
+    hasUrls: true
+    name: Default
+    settings:
+      path: '@webroot/media/uploads'
+    type: craft\fs\Local
+    url: '@assetUrl/uploads'
+meta:
+  __names__:
+    0a0730d1-c86e-48c2-b317-c862f3cee2da: 'Nested Row' # Nested Row
+    0ae96616-57b4-41ef-ba57-11afba454a09: Tags # Tags
+    0b8c2b9b-bf0f-4a02-b12e-6288ef12cad8: item # item
+    0b204e0e-428d-4c21-a81b-ef7ff20e00f7: 'Hero - image' # Hero - image
+    0e0a3fb4-75bd-4ebd-b643-141c0618cc20: Tags # Tags
+    1c92b14c-6120-4ce6-8563-5f7ae3507406: Entry # Entry
+    1e14cec5-f374-4022-8a7f-b21a189c3cf4: Link # Link
+    1f8b71f0-20d7-4479-82b8-309dd0c0f321: 'Background color' # Background color
+    2a42af8a-1337-4b7f-8f59-57b538db5194: 'Text color' # Text color
+    2d0a657a-5bb0-45e4-8a53-b9e132c2fe32: 'Background foreground' # Background foreground
+    2f188280-194c-40b2-814e-2664771d1816: 'Text color' # Text color
+    2fee888b-637c-4ffc-abdc-e9d14c678b9c: Media # Media
+    3f1b1ae7-1597-4880-82cd-25bfb670342d: 'Hero - big-bang' # Hero - big-bang
+    3fce9563-8b73-486e-84c8-a7a292fb2739: Genre # Genre
+    4b52a614-2cab-4c82-86b7-225c86ea7f02: 'Text color' # Text color
+    4b85b8e6-9210-43b3-b6f1-979728e45378: 'Text color' # Text color
+    5ad4923d-4d1b-47c7-9c00-80f2b608e39d: 'Public Schema' # Public Schema
+    5f151d6c-afaa-4430-8f64-6fd1fcb97ff3: 'Public Schema' # Public Schema
+    6cf02784-36ae-41ab-adbd-a984ca016b7a: 'Column content' # Column content
+    6d6123e4-520b-4220-8748-85243287c501: Icons # Icons
+    7c87ee48-5db3-44f8-b49f-a7ed18ba9b55: 'Foreground image' # Foreground image
+    7ca3482f-cc72-44d6-9b66-0f95a79ffddb: 'Coming soon' # Coming soon
+    7e2a898d-f836-40a3-83c6-478c01898d28: Text # Text
+    7e7b892e-151d-4a9d-87ac-72015d9a5c16: Headline # Headline
+    7f80d9a6-6940-4531-8c59-9ed427fef9e1: Theme # Theme
+    7fba2164-e155-40f1-923e-0da638e9d53e: Entries # Entries
+    8a3b25bc-ffee-4b7b-9cfd-a1496def68a2: Default # Default
+    8d01989e-1e10-46a8-8892-d845cf0e07ed: Title # Title
+    8f354c5e-7a0c-4652-aa86-26729baa3429: Text # Text
+    9bb5f9e4-c6c5-4644-9cec-aa10eb443829: 'Width - mobile' # Width - mobile
+    9d8f857d-348e-43fb-9987-914354d04ac1: 'Project type' # Project type
+    9eb47ac1-48eb-4d8c-88c1-186dd86d1131: Subtext # Subtext
+    20e8821c-e770-4d73-ab65-125b4115da9c: Subtitle # Subtitle
+    23d3aeab-ff41-4f6a-93db-9b8b27307f17: 'Content matrix' # Content matrix
+    28afd1bf-50ae-46ed-a539-c6240f804f4f: Tags # Tags
+    30dd26d5-5874-4455-8ce6-cb030788b1b3: 'Nested Column' # Nested Column
+    36a2abdd-6faf-469b-8b96-c5ec541b8e97: 'Shopify Products' # Shopify Products
+    36c8ec88-741c-4511-8b29-fc53a1fd052f: 'Translate Y' # Translate Y
+    39a89689-1857-4231-970a-153062e07877: 'Hover media' # Hover media
+    40a20bac-8c4d-4d31-86bf-900cea5c356b: 'Is present on mobile?' # Is present on mobile?
+    42abb849-7448-417a-b608-85583c822a0f: Image # Image
+    45bf0a44-5933-4fe3-bf12-2dc0d8677a34: Headline # Headline
+    54aa8e14-0113-481c-95e4-9829203be5fc: Text # Text
+    55e7b400-2b58-408f-9701-1843bcaffe23: Headline # Headline
+    57afc0fa-c4cf-4434-b8d7-09cf00adee84: Default # Default
+    69cf356a-d1c0-4c5d-bb57-72f3cce4222d: 'Project type' # Project type
+    75febb45-c75f-4d73-842b-63c42bc30f17: Technology # Technology
+    78edf4a1-21b0-45a9-8a95-b3167b02af19: springsummer # springsummer
+    88c17e44-e56e-4183-980c-32e4e060c5a6: 'Hero - Image v2' # Hero - Image v2
+    88ccbaf1-456a-43a7-ae3c-fa39c59fd3cb: Text # Text
+    90e17b30-c252-4d3d-a754-1ba0c0dc8225: Href # Href
+    93bd1e85-55f2-42b4-8a70-d463518044a5: springsummer # springsummer
+    208fca7d-de47-4afb-9740-45d42acfbb07: 'Hero - content' # Hero - content
+    314acce7-3779-4ebb-bdfd-436e3b275e6e: 'Background color' # Background color
+    337d9150-7c7a-48a9-a246-61a299f08559: 'Background color' # Background color
+    345dc4a4-49f6-4645-861c-02181be80f88: Technology # Technology
+    564c3f8f-e6ab-44c6-84d6-1da996e6dde1: 'Background color' # Background color
+    667a260f-5c12-402c-949b-81a0f70e077e: Headline # Headline
+    674a0cf9-016f-4c1b-9f1e-39936558d59c: Tags # Tags
+    835ca88c-d582-4839-aefc-782c7ea87a4d: 'Rich Text' # Rich Text
+    950bd0fc-6832-441b-962f-a026c5cfb57e: 'Background color' # Background color
+    1309cac7-ee46-4032-b00f-69f01d82211f: Column # Column
+    1908de86-d202-43f8-abbf-d27132ec790b: Prefix # Prefix
+    2139b853-8f40-4165-bd1b-2f3b40bbb232: Headline # Headline
+    4016fbe0-dc16-4647-84d6-eb3a80b606da: 'Is foreground hoverable' # Is foreground hoverable
+    7649e535-2173-48dd-b101-cc8e1375a970: Link # Link
+    8298e6f2-b996-4b4b-8810-b2a20c1352f8: Trumpet # Trumpet
+    021473a1-327c-47c4-a0fd-4a9b8539dd02: Newsletter # Newsletter
+    24211d74-c2da-4fa9-80c2-ca5aa4e2df18: Header # Header
+    57718d4c-9468-4391-92f0-3deab64fa3d5: Common # Common
+    74636f3d-5f34-4b2e-9a99-664dcf60c8e9: Theme # Theme
+    80622e1b-9a81-48cb-b9c7-7b1ce2185b1c: Media # Media
+    82714ccd-e99e-462e-9c37-f21717485039: Link # Link
+    380316f9-e7cd-42b5-afb0-8dc2257d1544: Profile # Profile
+    513021e8-e9a1-41b0-a144-92f618f424dd: Row # Row
+    50490036-e6ce-4366-9a0b-faab5d938f8a: 'Automatic tags' # Automatic tags
+    a9dd44e8-f1a3-4d37-ac60-802fb81c054c: Headline # Headline
+    a23b649c-0d4f-4108-9164-65c931a37763: Widget # Widget
+    a584b5d3-b554-4f68-a4ee-b0ffce0f8b7f: 'Is background hoverable' # Is background hoverable
+    a2176c6e-99ba-4e9e-ab64-e0791c805af4: 'Is background hoverable' # Is background hoverable
+    a3984e16-39a6-4493-8a25-950fcddea395: Video # Video
+    ab9eaf03-46ef-4dd8-9561-b6d4a0d6707a: Language # Language
+    ab96d9df-9204-4083-aa86-f50a6226a972: 'Link list' # Link list
+    acc5e059-050b-4874-98bc-41f308f23538: Loader # Loader
+    ad52ea7e-f516-4e0f-b085-4d63b3364d28: 'Typed field link list' # Typed field link list
+    b2d9bf8e-2b06-40dd-b3da-57c3ffabaf94: 'Arrow links' # Arrow links
+    b9cbc6e4-5f34-4357-892e-89483c3f5011: Media # Media
+    b14d649b-7f27-4082-9ab6-f6563f23cd09: 'Background color' # Background color
+    b32c5d25-ad02-43fd-aec3-33cda82d5796: Background # Background
+    b85077af-7d39-46b3-8b26-78cd6326d172: 'Rich text' # Rich text
+    ba5b7401-275f-4952-92bb-3565a2ee93ae: Industry # Industry
+    baf3737c-54cd-4016-968d-7c29bc924614: 'Link text' # Link text
+    bdbbfb5e-5a2d-4357-a40a-43c7703a73b3: Index # Index
+    bdf33dd0-4e56-472f-96e8-f8ece1319c58: Tags # Tags
+    c4c3d853-7fcd-42c0-a848-ac8f5b01b3d9: Video # Video
+    c6a59d05-dfcd-4ce4-bed0-e41dab80d20b: Trumpet # Trumpet
+    c70bf687-8f35-4f9b-bd81-e376c13e6ae9: Menu # Menu
+    c985b01a-384d-45b6-8de1-6054c0485eaf: 'Background color' # Background color
+    c1300276-d7cf-4c98-a84c-4353ae0242f9: Footer # Footer
+    cbfd35a3-cf22-4792-b978-a3cc430acaf9: Media # Media
+    ccae5132-f702-43d5-b5f4-c517929cf927: 'Text color' # Text color
+    ccb50fc0-39b8-46a9-b05a-b0557765ad20: 'Project type' # Project type
+    cdda8b76-c36a-4dd3-ad2c-61fed4508ab7: Index # Index
+    d06c079b-b50c-420f-8027-678816eee3a1: 'Is present on mobile?' # Is present on mobile?
+    d08cd6b2-199e-4d74-94f6-e163baa2cc67: 'Overlayed item' # Overlayed item
+    d3cb2fdb-fae5-42f1-9787-0a9a961785a4: Tags # Tags
+    d8bc482d-2e59-4fe4-8480-df3b1f8a3959: Trumpet # Trumpet
+    d58fd58e-13c4-48cc-bce2-2d5e155e900c: 'Text color' # Text color
+    d84cfb3f-f789-4b7f-8abd-3252e516a96d: Technology # Technology
+    d98acc5c-84e1-47ec-9876-9e0ffcbbb78e: 'Background color' # Background color
+    d864e054-cf3e-48de-8ce9-dcdf12e3d468: 'Text color' # Text color
+    d3931f55-1587-44a6-bc01-9471a6619cb3: Awards # Awards
+    dda5166c-253c-4ad6-958a-e5e1a7b0999a: Category # Category
+    de9d2109-ce8f-4710-b27c-9a2d6be8fc0b: 'Row content' # Row content
+    df41cace-a564-4309-bf87-5e6b8e9361a2: Media # Media
+    e6aba066-9dc7-4312-afda-e7f00fb49b60: Subheadline # Subheadline
+    e9b14201-83c9-452c-a824-19284c23c7b4: Text # Text
+    e78f28f4-c6c7-411b-91ad-a1097fb09032: 'Content Link' # Content Link
+    e88d4772-2d25-4777-b680-0655c9b39b01: Foreground # Foreground
+    e91e2c4a-47df-4cc8-9cc3-6160b5ba729d: 'Text color' # Text color
+    e5442edb-7c69-4e31-9e2e-61499bd2618d: Headline # Headline
+    ea254c7e-3ef8-4bd4-a39e-fbf40206a9e4: Genre # Genre
+    eabce699-f149-4164-94d0-255d9668eefa: Carousel # Carousel
+    ecea26a1-ed7b-406d-aa6f-3a41cde66886: 'Is present on mobile?' # Is present on mobile?
+    ee378aff-3064-46f2-9350-b8e2a81c54b6: Text # Text
+    eef8323c-7240-4246-be5b-6cc0dd6891e6: Trumpet # Trumpet
+    f1e05d6a-7877-4c3d-b41a-6f9183431e9a: Image # Image
+    f8e5080e-23ef-433e-8f45-89ab55008e96: 'Fat ass headline' # Fat ass headline
+    f51fbca5-c800-46c8-b9a2-c7020383b485: Width # Width
+    f618df35-cfd7-4b33-b195-bb4e40057884: 'Background image' # Background image
+    f1197428-80c0-49ba-922f-00a608fca7c8: 'Custom message' # Custom message
+    fc7936c3-765e-4c85-803b-71f067a6b7c2: 'Coming soon' # Coming soon
+    fd82bfdf-232c-46a8-baba-d5e47c5bcf07: Layout # Layout
+    fd89c627-264f-4b30-a9bf-dbef75a2ede0: 'Typed link field' # Typed link field
+    fe74a9a1-488e-49a2-82cc-1bfd1b5832cc: Entry # Entry
+plugins:
+  colorit:
+    edition: standard
+    enabled: true
+    licenseKey: 7HLF6PNDVHKXXEPAAIBPYFB6
+    schemaVersion: 1.0.3
+    settings:
+      hasCpSectionOverride: false
+      pluginNameOverride: Colorit
+  cp-css:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      additionalCss: "#nav {\r\n    margin-top: 10px;\r\n}\r\n\r\n#nav li a {\r\n    padding-top: 10px;\r\n    padding-left: 10px;\r\n    padding-bottom: 10px;\r\n    padding-right: 10px;\r\n}\r\n\r\n.sidebar nav li a {\r\n    margin-bottom: 5px;\r\n    padding-top: 10px;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n.sidebar .heading>span {\r\n    padding: 0;\r\n}\r\n\r\n#system-info {   \r\n    display: block;\r\n    height: auto;\r\n    background-color: transparent;\r\n    padding: 25px;\r\n}\r\n\r\n#system-info:focus, #system-info:hover {\r\n    background-color: transparent !important;\r\n}\r\n\r\n#site-icon {\r\n    height: auto;\r\n}\r\n\r\n#site-icon img, #site-icon svg {\r\n    height: auto;\r\n    width: auto;\r\n}\r\n\r\n#system-name {\r\n    display: none;\r\n}\r\n\r\n#global-sidebar {\r\n    padding: 8px;\r\n}\r\n\r\n#sidebar {\r\n    padding: 0 26px;\r\n}\r\n\r\n.sidebar#sidebar nav {\r\n    padding: 0;\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n}\r\n\r\n.sidebar nav {\r\n    padding: 0;\r\n}\r\n\r\nbody.ltr .sidebar nav>ul>li.heading>ul>li>a, body.ltr .sidebar nav>ul>li:not(.heading)>a {\r\n    padding-left: 19px;\r\n}"
+      cacheBusting: true
+      cssFile: ''
+  craft-range-slider:
+    edition: standard
+    enabled: true
+    licenseKey: 2NBTF7T0ZLE87N4A8FZO4UYX
+    schemaVersion: 1.0.0
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  embeddedassets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  hommxmlsitemap:
+    edition: standard
+    enabled: true
+    schemaVersion: 0.0.1
+  imager-x:
+    edition: pro
+    enabled: true
+    licenseKey: TU8Z8I9764WECARQBFCESVVL
+    schemaVersion: 4.0.0
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: 388IZQ6DV3AOAT4XEMJ3IE1X
+    schemaVersion: 3.6.2
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  redactor-custom-styles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  retour:
+    edition: standard
+    enabled: false
+    licenseKey: GQSZZWLOTG1CAQS1WZCQTY3H
+    schemaVersion: 3.0.11
+    settings:
+      alwaysStripQueryString: false
+      automaticallyTrimStatistics: true
+      createUriChangeRedirects: true
+      csvColumnDelimiter: ','
+      dynamicRedirectDisplayLimit: 100
+      enableApiEndpoint: true
+      enableStatistics: true
+      pluginName: Retour
+      preserveQueryString: false
+      recordRemoteIp: true
+      refreshIntervalSecs: 5
+      staticRedirectDisplayLimit: 100
+      statisticsRateLimitMs: 3600000
+      statsDisplayLimit: 1000
+      statsStoredLimit: 1000
+      stripQueryStringFromStats: true
+      uriChangeRedirectSrcMatch: pathonly
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: RCZ6YKX34MW6USRGJ6VNI4ZA
+    schemaVersion: 3.0.12
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: true
+      enableMetaContainerEndpoint: true
+      enableSeoFileLinkEndpoint: true
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+        - linkedin
+        - pinterest
+        - slack
+        - discord
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: true
+      truncateTitleTags: true
+  shopify:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.0.6
+    settings:
+      accessToken: $SHOPIFY_ADMIN_ACCESS_TOKEN
+      apiKey: $SHOPIFY_API_KEY
+      apiSecretKey: $SHOPIFY_API_SECRET_KEY
+      hostName: $SHOPIFY_HOSTNAME
+      template: ''
+      uriFormat: ''
+  transcoder:
+    edition: standard
+    enabled: true
+    licenseKey: GEP1C3KZFJ3TIT7MINI6UL47
+    schemaVersion: 1.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+system:
+  edition: pro
+  live: true
+  name: Spring/Summer™
+  retryDuration: null
+  schemaVersion: 4.5.3.0
+  timeZone: Europe/Copenhagen
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

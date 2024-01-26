@@ -1,0 +1,112 @@
+childBlocks:
+  - media
+conditions: null
+description: 'An absolutely positioned element (typically a Media) floating on top of the content.'
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  dae458d1-554b-44c7-8105-7b5414308872:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 9291b0ec-c1fe-4478-9055-f6bdf7e7e2ff
+            userCondition: null
+        name: Default
+        uid: 28a12f8b-5b2e-4890-9317-bda7a0b82625
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f51fbca5-c800-46c8-b9a2-c7020383b485 # Width
+            instructions: 'The width of the "column". Can be used instead of, or together with the media width'
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f7c13d8-420a-4b99-8361-ec71c4c7d2f8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9bb5f9e4-c6c5-4644-9cec-aa10eb443829 # Width - mobile
+            instructions: 'The width of the "column", on mobile'
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fcfb78bf-9fa6-489a-b792-04cfffe56468
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9cf21d71-c667-4789-911d-bdd341a4aabd
+            instructions: 'Vertical alignment is relative to the height of the Row'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e53984e2-cb02-427a-9065-43820a2d4d5b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 79c7cd76-ed8a-406c-a72e-f9bde5a79052
+            instructions: '"Left" and "Right" will place the item in the edges of the screen. Add "?grid" to the preview-url to see the grid'
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb6711a8-afff-4dc8-a879-de1cbbf16ccb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a17186cc-e2f4-4dd9-9210-6aab8284d4f7
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d80e98b-fc94-46c7-8be0-d6bfd95f1722
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 36c8ec88-741c-4511-8b29-fc53a1fd052f # Translate Y
+            instructions: 'Applies CSS that moves the element up/down'
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a2f0c25-3d3d-4737-81f8-fb6bf85c61a0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Layout
+        uid: b3218acd-7935-4e67-93ff-4496679adb74
+        userCondition: null
+group: de9d2109-ce8f-4710-b27c-9a2d6be8fc0b # Row content
+groupChildBlockTypes: false
+handle: overlayedItem
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 1
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 1
+minSiblingBlocks: 0
+name: 'Overlayed item'
+sortOrder: 9
+topLevel: false

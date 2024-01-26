@@ -1,0 +1,64 @@
+childBlocks:
+  - entry
+conditions: null
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  7d568844-2c49-4357-98e8-c70743314b31:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 1c3d746e-b097-4eee-a4cc-3b960c5b70ed
+            userCondition: null
+        name: Default
+        uid: 1e39ba26-d457-4752-9a3a-06ee9189bc62
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f51fbca5-c800-46c8-b9a2-c7020383b485 # Width
+            instructions: 'The width of the column (-1 will make them fill the available space)'
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea705ae5-8dcf-4197-94ef-805a77ab2e33
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9bb5f9e4-c6c5-4644-9cec-aa10eb443829 # Width - mobile
+            instructions: 'The width of the column, on mobile'
+            label: __blank__
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd2a9805-24a7-4d82-b2cd-1bf9b1a74acb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Layout
+        uid: 5657f620-e991-4cfe-9186-1c2f18cbb32f
+        userCondition: null
+group: de9d2109-ce8f-4710-b27c-9a2d6be8fc0b # Row content
+groupChildBlockTypes: false
+handle: nestedColumn
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 2
+maxSiblingBlocks: 2
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Nested Column'
+sortOrder: 14
+topLevel: false

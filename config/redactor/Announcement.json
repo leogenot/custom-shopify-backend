@@ -1,0 +1,34 @@
+{
+  "buttons": [
+    "html",
+    "formatting",
+    "link"
+  ],
+  "plugins": ["linkclass"],
+  "linkClasses": [
+    {
+      "label": "CTA",
+      "class": "text-button-label cta"
+    }
+  ],
+  "linkNewTab": true,
+  "formatting": [],
+  "formattingAdd": {
+    "heading": {
+      "title": "Heading",
+      "api": "module.block.format",
+      "args": {
+        "tag": "p",
+        "class": "text-subhead"
+      }
+    },
+    "body": {
+      "title": "Body",
+      "api": "module.block.format",
+      "args": {
+        "tag": "p",
+        "class": "text-body"
+      }
+    }
+  }
+}

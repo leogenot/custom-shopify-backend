@@ -1,0 +1,86 @@
+childBlocks: null
+conditions:
+  craft\elements\Category:
+    class: craft\elements\conditions\categories\CategoryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\categories\GroupConditionRule
+        operator: ni
+        uid: 945279c9-4838-460b-97b3-b146f3f2fce9
+        values:
+          - ba5b7401-275f-4952-92bb-3565a2ee93ae # Industry
+          - 9d8f857d-348e-43fb-9987-914354d04ac1 # Project type
+          - 75febb45-c75f-4d73-842b-63c42bc30f17 # Technology
+    elementType: craft\elements\Category
+    fieldContext: global
+  craft\elements\Entry:
+    class: craft\elements\conditions\entries\EntryCondition
+    conditionRules:
+      -
+        class: craft\elements\conditions\entries\TypeConditionRule
+        operator: ni
+        uid: 360f162a-ad0b-4d4b-8c73-7b2b26b2b2f6
+    elementType: craft\elements\Entry
+    fieldContext: global
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  04ea201f-281b-4d52-90a5-d34543f573c2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: eef8323c-7240-4246-be5b-6cc0dd6891e6 # Trumpet
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7424f288-7c6f-49b0-a11c-16a7453b487c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3d0a153d-7cf3-4fd2-a96a-ca47645e79df
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 10ff5265-6011-4aff-b238-d6b5e59e56d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8dc1d25a-3e67-40c0-9cc6-661f8ec49d84
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ccdd06a-a57b-4ad2-a6e0-bcade309aefd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 97bd1165-bc95-42d6-8a17-9b2deb56b73f
+        userCondition: null
+group: de9d2109-ce8f-4710-b27c-9a2d6be8fc0b # Row content
+groupChildBlockTypes: false
+handle: heroImage
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 1
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 1
+minSiblingBlocks: 0
+name: 'Hero - image'
+sortOrder: 7
+topLevel: false

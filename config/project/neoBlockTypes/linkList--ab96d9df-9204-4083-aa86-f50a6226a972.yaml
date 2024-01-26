@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 91a991d3-fdec-4366-ab5a-78cacba3eba7
+fieldLayouts:
+  3e7dfe9b-6423-4351-b3df-c767833394f7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 32d5b2cd-e8c9-48ab-b9a0-3ffda7745a4c
+            instructions: null
+            label: 'Section title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90ba3edb-9d8b-45ac-96ef-1a5054d7de4e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ad52ea7e-f516-4e0f-b085-4d63b3364d28 # Typed field link list
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ee93ca42-827b-44a3-9f77-7505a377306a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 2530f4c3-a600-4770-b23b-41fcc8312303
+        userCondition: null
+group: 6cf02784-36ae-41ab-adbd-a984ca016b7a # Column content
+groupChildBlockTypes: true
+handle: linkList
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Link list'
+sortOrder: 29
+topLevel: false

@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: menu
+name: Menu
+propagationMethod: all
+siteSettings:
+  78edf4a1-21b0-45a9-8a95-b3167b02af19: # springsummer
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 7e0dc1d1-a3db-4c52-ba7a-82acef041869
+type: structure

@@ -1,0 +1,6 @@
+{
+  "buttons": ["formatting"],
+  "formatting": ["p"],
+  "plugins": ["limiter", "counter"],
+  "limiter": 360
+}
