@@ -1,0 +1,14 @@
+columnSuffix: nkdnlkey
+contentColumnType: boolean
+fieldGroup: 4c050537-070e-4953-b986-9b6e8903e049 # Products
+handle: productShipping
+instructions: null
+name: 'Product shipping?'
+searchable: false
+settings:
+  default: false
+  offLabel: 'This product doesn''t ship'
+  onLabel: 'This product ships'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,6 +1,4 @@
-assets:
-  tempVolumeUid: def7b936-876b-42c4-91aa-0e4217be184f # Default
-dateModified: 1706278519
+dateModified: 1706279905
 elementSources:
   craft\elements\Entry:
     -
@@ -109,17 +107,21 @@ fs:
 meta:
   __names__:
     0eb6c413-07d2-4737-be17-ec53e88584b8: Link # Link
+    0f13a14e-3716-47b4-9706-0a32094fdbf4: 'Product shipping?' # Product shipping?
     0fbae9bb-c452-420a-bf47-7952f53d0cb6: Entries # Entries
     1b783c4f-bd80-401c-b377-8dcaaf0ffb68: Media # Media
     1bfe91d5-cdc2-4560-8e6e-9f4398ba42f1: 'Text - limited' # Text - limited
     1c06b984-b507-4166-99c2-23e7ccbd2b42: 'Custom Shopify' # Custom Shopify
     01c27f3d-48f7-4759-8491-63fda533f8ed: 'Image Teaser' # Image Teaser
     2d19b980-c6d5-4ec4-bba9-b6987c7e9611: Content # Content
+    02dd5cb2-b3c0-4d37-a3be-2e7562a4bf3b: 'Product description' # Product description
     2ea1f122-0f01-44ef-bf4e-03943d8f4ebb: Settings # Settings
     2faba7cf-91e5-4a88-b4b5-154f3b19075b: 'Date 2' # Date 2
     3b329d09-0244-4772-a51f-a0707022c5b3: 'All Offers & Packages' # All Offers & Packages
+    3e08b9ac-2168-41ca-8138-b194650efdd2: 'Product weight' # Product weight
     3fbdccf5-3d82-4362-b9d8-d8e273a38564: 'Tag left' # Tag left
     4a63451e-1c46-4b2b-89ae-df07b8630665: Items # Items
+    4c050537-070e-4953-b986-9b6e8903e049: Products # Products
     4c60465d-56ea-4e52-83bb-57923cc97458: Common # Common
     4ecfe397-4ca6-47b9-9f2d-c3824f83224b: 'Entry Carousel' # Entry Carousel
     4f4a359b-b74d-43be-9eba-b231a1e253dd: Index # Index
@@ -136,7 +138,11 @@ meta:
     6ef9cec9-a33d-44ba-bfc0-4aafd2505bdc: 'Text color' # Text color
     7f9e33e7-9f68-483f-8eab-d649a71e0286: 'Show image captions' # Show image captions
     07fedf19-0946-4fea-abb7-bbf308f9e2e7: Headline # Headline
+    8af67d69-ef21-4c87-9484-82d406b37733: 'Product barcode' # Product barcode
+    9d4fffd0-3e1e-4a99-b3c1-ac72c7c49c06: 'Product title' # Product title
+    9d494553-0593-4ca4-969b-3d3f46a80a50: 'Product price' # Product price
     13e567bf-f8ac-4de9-8914-30745f6bc860: Entry # Entry
+    17ffb6f4-123f-458a-bb7e-0d7fc44523aa: 'Product medias' # Product medias
     24ae792c-53e5-48b1-9d46-7e1af52c6c31: Right # Right
     30c68743-dafc-4323-94f9-4b28cb27d8fc: Entry # Entry
     31a60245-d9ed-46e7-a661-d55f83c47300: Text # Text
@@ -156,6 +162,7 @@ meta:
     71b524a9-c436-43e2-992e-9b971fe665a0: Text # Text
     78a6528a-68b2-4a8a-b99e-d3992ed9b750: Link # Link
     81a83194-da60-4348-a385-178f6615d4d9: Richtext # Richtext
+    88d00e5c-8e15-4900-a448-1cb42a066c19: Weight # Weight
     92f30535-adcc-4f9f-b5b1-60042746f6c5: Textfield # Textfield
     127fb155-166e-4996-bbfe-a130373c57ff: Link # Link
     147e54a8-fa89-43ba-972f-c99df8a6eb43: Default # Default
@@ -170,12 +177,14 @@ meta:
     787ae384-86e2-42f5-8992-2f3248499275: 'Main menu' # Main menu
     875ddcb2-5ebb-4e5c-b2e8-df2b8d16d467: 'Rooms Carousel' # Rooms Carousel
     896fd6fd-26d2-4480-b641-acfa5a037eb1: Headline # Headline
+    941d68f7-4e2f-499e-aadc-707fba548f85: 'Product quantity' # Product quantity
     1047e869-8b80-481b-bc87-ce5d9212ed20: En # En
     6767a8c2-9e70-403f-894c-db67293a9518: Link # Link
     7055b72b-a0b3-43e3-889f-11cddcc2c60f: 'Responsive media' # Responsive media
     7155a496-2699-440f-9628-082b0af469a9: 'Error page' # Error page
     8554cfab-f0ff-4325-af7c-d57d02af800b: 'Custom link' # Custom link
     9558a12f-f2c0-400d-bade-e256dded714f: List # List
+    37494ced-87df-4a71-95e7-5ff598ecef54: 'Product weight' # Product weight
     041511d7-bee4-4cef-8292-19024a001bd3: Entries # Entries
     45747ae3-7ff5-4f53-a00a-776b00d906da: 'Show image caption' # Show image caption
     68843b40-25df-4563-aeb5-8dfca909747b: Tag # Tag
@@ -185,12 +194,15 @@ meta:
     3919271a-0c9b-44c9-aeb7-4e89acba93e5: Warning # Warning
     a048f70f-0e8a-4aef-9458-80a75f337a8b: Reversed # Reversed
     a3b80282-c227-4b0e-80bb-13fb9c524a9c: Item # Item
+    a4cd07fd-a017-4786-a780-f3d04829c0bb: Unit # Unit
     a4df4597-7f09-4358-8460-d357905a981d: Media # Media
     a7ca077f-a851-432a-8c7b-7147f9a892c9: 'Custom link' # Custom link
     a8d11985-5161-4273-8c3b-154af3abe1d6: Media # Media
+    a9cb6727-3b0e-4b1f-a876-6b601e2a54f1: 'Product SKU' # Product SKU
     a56ab205-61a5-4deb-8aa8-61a61a329675: Items # Items
     a94b73a7-3163-422d-ad01-84f79ad1f533: Image # Image
     a8227c69-063e-45e4-821b-858e1de4dfe9: Image # Image
+    a13873b4-d8f5-43ad-9629-5e884869a575: Products # Products
     a2754926-d09b-4f83-aefe-501d934e71d4: Closable # Closable
     aca2d99c-1158-41c0-8b0c-b61c305f70a0: Footer # Footer
     add8265c-3aeb-4a66-ac9c-a82af78abf31: Link # Link
@@ -200,6 +212,7 @@ meta:
     b27511eb-67e1-4b84-a3bb-9966c1284964: Icon # Icon
     b5505176-4e5c-437b-a949-83381822d12e: Tag # Tag
     bb258364-7152-4469-a31e-83e9374d1331: 'Error page' # Error page
+    bd872f06-9f12-45bd-ac36-7dc3eb4572f8: Default # Default
     be6f80ce-90c7-47f2-9c12-08a22648cae9: Tag # Tag
     bfe689ab-f4c8-4ca9-8150-b56e193158e4: Layout # Layout
     c1e40e15-2241-4142-9b1b-bdf8f9855cd6: Reversed # Reversed

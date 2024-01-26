@@ -1,0 +1,20 @@
+columnSuffix: lqdtlarx
+contentColumnType: integer(10)
+fieldGroup: 4c050537-070e-4953-b986-9b6e8903e049 # Products
+handle: productQuantity
+instructions: null
+name: 'Product quantity'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

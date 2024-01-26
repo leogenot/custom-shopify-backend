@@ -1,0 +1,197 @@
+fieldLayouts:
+  082b5dd3-9cd1-4725-ad5b-1d9bdc33e86f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: af356e7e-5783-416f-8193-d645cf9f8084
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9d4fffd0-3e1e-4a99-b3c1-ac72c7c49c06 # Product title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a3396ed-8210-4330-8c61-022d8a7fbdb6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 02dd5cb2-b3c0-4d37-a3be-2e7562a4bf3b # Product description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5d119bf4-53ba-41cd-a242-17e5779e3cbf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d78fba63-9351-4a8a-8246-2f52817e3361
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 17ffb6f4-123f-458a-bb7e-0d7fc44523aa # Product medias
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e945a5a3-8223-499b-80c4-22bfba5222b8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Media
+        uid: 8b33850c-69be-47e4-bb78-71372811f8ce
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9d494553-0593-4ca4-969b-3d3f46a80a50 # Product price
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 85450b58-001d-4dd6-8742-a90b26c1b511
+            userCondition: null
+            warning: null
+            width: 100
+        name: Pricing
+        uid: 640736f0-9a48-4474-b6e0-3fa7647821dd
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 941d68f7-4e2f-499e-aadc-707fba548f85 # Product quantity
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2fee5e42-f92d-4569-b682-a35bbe914844
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a9cb6727-3b0e-4b1f-a876-6b601e2a54f1 # Product SKU
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 266debe0-9c26-4d97-9dfa-b5e8acd5a9e6
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 8af67d69-ef21-4c87-9484-82d406b37733 # Product barcode
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 933b2370-0650-49d0-a09a-68fb25d4b68d
+            userCondition: null
+            warning: null
+            width: 50
+        name: Inventory
+        uid: 79a52187-bea4-490e-ad84-71389f44e2e3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0f13a14e-3716-47b4-9706-0a32094fdbf4 # Product shipping?
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07f1ef0e-8a56-407b-a127-ed7e69d252fb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 37494ced-87df-4a71-95e7-5ff598ecef54 # Product weight
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65777891-0069-49f2-bc47-5eab85236975
+            userCondition: null
+            warning: null
+            width: 100
+        name: Shipping
+        uid: 268b536e-48b0-4de2-8002-805939a00552
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0fbae9bb-c452-420a-bf47-7952f53d0cb6 # Entries
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb793653-a30e-4b67-9e6b-1b2b7bb14004
+            userCondition: null
+            warning: null
+            width: 100
+        name: Variants
+        uid: 5ada1198-b172-4691-8a5d-d59e3de28ab9
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: a13873b4-d8f5-43ad-9629-5e884869a575 # Products
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,36 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 4c050537-070e-4953-b986-9b6e8903e049 # Products
+handle: productMedias
+instructions: null
+name: 'Product medias'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:def7b936-876b-42c4-91aa-0e4217be184f' # Default
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:def7b936-876b-42c4-91aa-0e4217be184f' # Default
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets
