@@ -1,0 +1,64 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  987c5941-b0e2-4dd6-92f5-274fd3ce8d49:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a56ab205-61a5-4deb-8aa8-61a61a329675 # Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fcf38242-4a41-40b3-a1ca-750a6ada9628
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c9b82ca4-9eda-4c7e-929b-91c093f77e6e
+        userCondition: null
+fields:
+  a56ab205-61a5-4deb-8aa8-61a61a329675: # Items
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: items
+    instructions: null
+    name: Items
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 954983136
+      columns:
+        __assoc__:
+          -
+            - 13e567bf-f8ac-4de9-8914-30745f6bc860 # Entry
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 8554cfab-f0ff-4325-af7c-d57d02af800b # Custom link
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_3_items}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: cardCarousel
+name: 'Card Carousel'
+sortOrder: 9

@@ -1,0 +1,62 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  d8ea0bbc-09fc-4b5f-bfbe-42eda3e607f5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cd225b7f-272f-4081-9a0c-88749790b513 # Entries
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e3b7a07-9200-443c-bac1-0bb6129a34d8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cea4ef44-7f29-4ce1-a54b-4d1a7d573d04
+        userCondition: null
+fields:
+  cd225b7f-272f-4081-9a0c-88749790b513: # Entries
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: entries
+    instructions: null
+    name: Entries
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: 'Add a room'
+      showSiteMenu: false
+      sources:
+        - 'section:284d21da-7377-485f-b767-50483254f34d'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: roomsCarousel
+name: 'Rooms Carousel'
+sortOrder: 10

@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: true
+handle: index
+name: Index
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'English preview'
+      -
+        - urlFormat
+        - '@previewBaseUrl'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - 'Danish preview'
+      -
+        - urlFormat
+        - '@danishBaseUrl'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  1047e869-8b80-481b-bc87-ce5d9212ed20: # En
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+type: single

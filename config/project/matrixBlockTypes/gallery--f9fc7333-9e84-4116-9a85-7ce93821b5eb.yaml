@@ -1,0 +1,91 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  134f1813-6fda-4a24-bce8-beb24bf9de42:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 36cdc76b-4a86-481f-baf5-8f4f42ca738b # Columns
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0abfefb8-b4cd-4e27-a71f-8898ba5eda4b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7f9e33e7-9f68-483f-8eab-d649a71e0286 # Show image captions
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9185b36d-65d3-42da-b208-a41343897ba1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0cd0bf2c-aa72-41da-990f-9b028a552986
+        userCondition: null
+fields:
+  7f9e33e7-9f68-483f-8eab-d649a71e0286: # Show image captions
+    columnSuffix: rgnvfurx
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: showImageCaptions
+    instructions: null
+    name: 'Show image captions'
+    searchable: false
+    settings:
+      default: false
+      offLabel: 'No'
+      onLabel: 'Yes'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  36cdc76b-4a86-481f-baf5-8f4f42ca738b: # Columns
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: columns
+    instructions: 'A column can have 1 or 2 assets each'
+    name: Columns
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1849782745
+      columns:
+        __assoc__:
+          -
+            - d8f882ec-fc67-4e36-be86-d7a19aa8d447 # Left
+            -
+              __assoc__:
+                -
+                  - width
+                  - 50%
+          -
+            - 24ae792c-53e5-48b1-9d46-7e1af52c6c31 # Right
+            -
+              __assoc__:
+                -
+                  - width
+                  - 50%
+      contentTable: '{{%stc_7_columns}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: true
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: gallery
+name: Gallery
+sortOrder: 12

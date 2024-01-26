@@ -1,0 +1,78 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  68411180-7876-4513-b5ff-539b3722dacb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5f3c423f-e4c6-4473-b33a-eb57f84dd166 # Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d23d246b-27f3-40aa-966f-d3761a16b551
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 26cfad03-47bf-4677-b9f6-aa980bf33665
+        userCondition: null
+fields:
+  5f3c423f-e4c6-4473-b33a-eb57f84dd166: # Items
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: items
+    instructions: null
+    name: Items
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1764390394
+      columns:
+        __assoc__:
+          -
+            - 202c7458-1c92-4184-ba71-3ed53b632500 # Tag
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - e564e547-a62d-4ea0-b2cb-f1d3dbe63b30 # Headline
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 1b783c4f-bd80-401c-b377-8dcaaf0ffb68 # Media
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - f9543ccd-d05f-4090-a67e-7f9e52d218ef # Link
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_4_items}}'
+      fieldLayout: matrix
+      maxRows: 2
+      minRows: 2
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Add an item'
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: dualTeaser
+name: 'Dual Teaser'
+sortOrder: 7

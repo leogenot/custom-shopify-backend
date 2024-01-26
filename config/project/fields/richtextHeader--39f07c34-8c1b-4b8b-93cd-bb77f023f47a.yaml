@@ -1,0 +1,27 @@
+columnSuffix: tdymaaaj
+contentColumnType: text
+fieldGroup: 4c60465d-56ea-4e52-83bb-57923cc97458 # Common
+handle: richtextHeader
+instructions: 'Used in the header, as the CTA is a one-of'
+name: 'Richtext - Header'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: Header.json
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: site
+type: craft\redactor\Field

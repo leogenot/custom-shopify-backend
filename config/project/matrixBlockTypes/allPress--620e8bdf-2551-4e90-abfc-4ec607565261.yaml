@@ -1,0 +1,66 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  70913a7d-2ab9-4ecf-a094-3e9a3be1fde6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: fbf38450-f32e-4f7d-9241-5db02efbcc29 # Info
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56fcb9d3-711c-47ba-8a98-bfc05aa506b0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e09e8bf3-e3ab-4d22-b8b5-7f0a67bdaba9 # Warning
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7adab2bd-5062-41e0-959f-c6f002bb98b5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 11360cfa-ad8e-4108-b07f-878f219de7a1
+        userCondition: null
+fields:
+  e09e8bf3-e3ab-4d22-b8b5-7f0a67bdaba9: # Warning
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: warning
+    instructions: null
+    name: Warning
+    searchable: false
+    settings:
+      style: warning
+      tip: 'Don''t remove this module, as it''s the only way of rendering the Press entries'
+    translationKeyFormat: null
+    translationMethod: none
+    type: carlcs\uielementfields\fields\UiWarning
+  fbf38450-f32e-4f7d-9241-5db02efbcc29: # Info
+    columnSuffix: hmvrxads
+    contentColumnType: string
+    fieldGroup: null
+    handle: info
+    instructions: null
+    name: Info
+    searchable: false
+    settings:
+      style: tip
+      tip: 'Will render all the entries in the "Press" section'
+    translationKeyFormat: null
+    translationMethod: none
+    type: carlcs\uielementfields\fields\UiTip
+handle: allPress
+name: 'All Press'
+sortOrder: 17

@@ -1,0 +1,170 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  6fad2253-9693-4c22-b02a-3c41dfa67385:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d12e78b0-196a-4458-8963-0c7e00537f2c # Media
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26bc7791-86ed-49b5-b801-5ff703773a37
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 389d1cf4-6734-4c9e-a005-6fc552ca5dbb # Richtext
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84d37252-096b-416e-8e79-acdb10d8f35a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: a048f70f-0e8a-4aef-9458-80a75f337a8b # Reversed
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c604d61d-1fb1-40cf-9be3-c6baddc808ae
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6d3f513b-f0f6-411b-8b54-070e684dda04 # Show image caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 958c9ca6-bb20-4502-aad0-cf37ba76fa0b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 79775de6-c2e4-4da1-8080-53033322bf44
+        userCondition: null
+fields:
+  6d3f513b-f0f6-411b-8b54-070e684dda04: # Show image caption
+    columnSuffix: novkozsr
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: showImageCaption
+    instructions: 'If the image has a caption (added by double clicking the asset), it will be shown'
+    name: 'Show image caption'
+    searchable: false
+    settings:
+      default: false
+      offLabel: 'No'
+      onLabel: 'Yes'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  389d1cf4-6734-4c9e-a005-6fc552ca5dbb: # Richtext
+    columnSuffix: zdqvtyaf
+    contentColumnType: text
+    fieldGroup: null
+    handle: richtext
+    instructions: null
+    name: Richtext
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  a048f70f-0e8a-4aef-9458-80a75f337a8b: # Reversed
+    columnSuffix: bgroyfcd
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: reversed
+    instructions: 'Will place the text in the left column, when there''s an image. When it''s only text this option does nothing.'
+    name: Reversed
+    searchable: false
+    settings:
+      default: true
+      offLabel: 'No'
+      onLabel: 'Yes'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  d12e78b0-196a-4458-8963-0c7e00537f2c: # Media
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: media
+    instructions: null
+    name: Media
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+        - video
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:def7b936-876b-42c4-91aa-0e4217be184f' # Default
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:def7b936-876b-42c4-91aa-0e4217be184f' # Default
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: contentModule
+name: Content
+sortOrder: 4

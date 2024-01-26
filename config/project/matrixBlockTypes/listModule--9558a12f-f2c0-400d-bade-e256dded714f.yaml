@@ -1,0 +1,91 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  39e123fa-18f1-49a8-a279-82613e8cd85e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 33bf4874-1ebd-4802-b260-a99714519a9d # Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ee95dcd-3553-4a30-bfc8-7fc6c33d8680
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c1e40e15-2241-4142-9b1b-bdf8f9855cd6 # Reversed
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b0185877-5c46-459d-ac18-3be8548fd6c5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 819362e6-6f9a-4581-b498-15c8d3242ed2
+        userCondition: null
+fields:
+  33bf4874-1ebd-4802-b260-a99714519a9d: # Items
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: items
+    instructions: null
+    name: Items
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1950683238
+      columns:
+        __assoc__:
+          -
+            - 30c68743-dafc-4323-94f9-4b28cb27d8fc # Entry
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - a7ca077f-a851-432a-8c7b-7147f9a892c9 # Custom link
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_2_items}}'
+      fieldLayout: table
+      maxRows: 7
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  c1e40e15-2241-4142-9b1b-bdf8f9855cd6: # Reversed
+    columnSuffix: nqqtiagx
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: reversed
+    instructions: 'Will place the image to the right'
+    name: Reversed
+    searchable: false
+    settings:
+      default: false
+      offLabel: 'No'
+      onLabel: 'Yes'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: listModule
+name: List
+sortOrder: 6

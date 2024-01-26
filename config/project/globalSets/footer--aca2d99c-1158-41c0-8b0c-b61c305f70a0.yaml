@@ -1,0 +1,56 @@
+fieldLayouts:
+  b5e4f94a-6b20-49ac-bab6-71e1441c4c39:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a94b73a7-3163-422d-ad01-84f79ad1f533 # Image
+            instructions: null
+            label: 'Background image'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2a4e85f-bdaa-4200-a0c1-3c709afad04a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ad10c291-ef6d-4d79-8f1e-849473202717
+            instructions: null
+            label: Logo
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5d69633-eee2-4146-a70e-4518b5a4425d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 81a83194-da60-4348-a385-178f6615d4d9 # Richtext
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3b4f281-9a0f-450a-8e5a-67f150ce0126
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'The Footer menu is automatically inserted in the footer'
+            type: craft\fieldlayoutelements\Tip
+            uid: 44f6345b-2d34-423f-850f-3871a1fcc663
+            userCondition: null
+        name: Default
+        uid: e6cbd8bb-3231-42dd-afd1-717c36fb7cd2
+        userCondition: null
+handle: footer
+name: Footer
+sortOrder: 3

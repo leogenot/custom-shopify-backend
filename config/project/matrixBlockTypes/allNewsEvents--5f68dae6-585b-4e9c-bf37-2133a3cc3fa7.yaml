@@ -1,0 +1,66 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  2d67f6d8-b471-4a20-919f-002a83160173:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b8d154ec-090b-4c58-a4d5-4894e7ccda08 # Info
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ce1c0ac2-5933-427e-a5b0-55cb538a6e10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3919271a-0c9b-44c9-aeb7-4e89acba93e5 # Warning
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 167483ca-511d-4ed0-8c1d-69a8e462cfd6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f7a60ebc-07ef-497c-bb73-31b0db759584
+        userCondition: null
+fields:
+  3919271a-0c9b-44c9-aeb7-4e89acba93e5: # Warning
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: warning
+    instructions: null
+    name: Warning
+    searchable: false
+    settings:
+      style: warning
+      tip: 'Don''t remove this module, as it''s the only way of rendering the News and Events'
+    translationKeyFormat: null
+    translationMethod: none
+    type: carlcs\uielementfields\fields\UiWarning
+  b8d154ec-090b-4c58-a4d5-4894e7ccda08: # Info
+    columnSuffix: vnvrlcjl
+    contentColumnType: string
+    fieldGroup: null
+    handle: info
+    instructions: null
+    name: Info
+    searchable: false
+    settings:
+      style: tip
+      tip: 'Will render all the Article pages of types "News" and "Events"'
+    translationKeyFormat: null
+    translationMethod: none
+    type: carlcs\uielementfields\fields\UiTip
+handle: allNewsEvents
+name: 'All News & Events'
+sortOrder: 15

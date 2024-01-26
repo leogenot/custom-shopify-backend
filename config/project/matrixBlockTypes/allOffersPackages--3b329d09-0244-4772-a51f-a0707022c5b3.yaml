@@ -1,0 +1,66 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  b3808cd3-498e-4326-b33f-56610ab29812:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6aad1b54-699a-4b2a-abad-d60f90f87b97 # Info
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d015748-240d-44b9-97ce-a343021ed1b0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de67e196-ad55-4210-8298-5a59eb02bbd9 # Warning
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ab7b625a-1133-4e9d-b9e4-25a2b02a2dab
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 37e21fcf-160c-4182-9ab7-a4c75e1cdb24
+        userCondition: null
+fields:
+  6aad1b54-699a-4b2a-abad-d60f90f87b97: # Info
+    columnSuffix: jkaktqgu
+    contentColumnType: string
+    fieldGroup: null
+    handle: info
+    instructions: null
+    name: Info
+    searchable: false
+    settings:
+      style: tip
+      tip: 'Will render all the Article pages of types "Offer" and "Package"'
+    translationKeyFormat: null
+    translationMethod: none
+    type: carlcs\uielementfields\fields\UiTip
+  de67e196-ad55-4210-8298-5a59eb02bbd9: # Warning
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: warning
+    instructions: null
+    name: Warning
+    searchable: false
+    settings:
+      style: warning
+      tip: 'Don''t remove this module, as it''s the only way of rendering the Offers and Packages'
+    translationKeyFormat: null
+    translationMethod: none
+    type: carlcs\uielementfields\fields\UiWarning
+handle: allOffersPackages
+name: 'All Offers & Packages'
+sortOrder: 16

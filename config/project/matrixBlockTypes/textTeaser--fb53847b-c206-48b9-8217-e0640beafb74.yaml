@@ -1,0 +1,64 @@
+field: ea573766-63d9-4649-927e-646ed2609c9a # Page Modules
+fieldLayouts:
+  2efa0e39-efae-4fa5-a3b0-77708ad5d832:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4a63451e-1c46-4b2b-89ae-df07b8630665 # Items
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d12152d3-65bc-45e6-b716-b1abbfa54b60
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 732fc701-aad7-4300-bc55-be11187301fc
+        userCondition: null
+fields:
+  4a63451e-1c46-4b2b-89ae-df07b8630665: # Items
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: items
+    instructions: null
+    name: Items
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1692195907
+      columns:
+        __assoc__:
+          -
+            - 0eb6c413-07d2-4737-be17-ec53e88584b8 # Link
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - e7bc80d2-7a8e-4cb6-b565-ea3c4c76d7c6 # Medias
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_6_items}}'
+      fieldLayout: row
+      maxRows: 3
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: textTeaser
+name: 'Text Teaser'
+sortOrder: 8

@@ -1,0 +1,92 @@
+changedFieldIndicator: 641250816
+field: a56ab205-61a5-4deb-8aa8-61a61a329675 # Items
+fieldLayouts:
+  2a94d4e4-33c7-4cd0-b18b-5272b83831d4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 13e567bf-f8ac-4de9-8914-30745f6bc860 # Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca52e04d-e6e6-4bc1-a355-500811f26631
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8554cfab-f0ff-4325-af7c-d57d02af800b # Custom link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5292083a-3b52-48d0-82cd-cf9e39801b97
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1f82821b-cefb-44fe-a7e7-9085728e2adc
+        userCondition: null
+fields:
+  13e567bf-f8ac-4de9-8914-30745f6bc860: # Entry
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: entry
+    instructions: null
+    name: Entry
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      sources:
+        - 'section:156dd8ca-1896-4b0e-9b11-586644c437cd'
+        - 'section:ebd08f61-59fb-4185-a2f6-4b2cf5a190bc'
+        - 'section:284d21da-7377-485f-b767-50483254f34d'
+        - singles
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  8554cfab-f0ff-4325-af7c-d57d02af800b: # Custom link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: customLink
+    instructions: null
+    name: 'Custom link'
+    searchable: false
+    settings:
+      contentTable: '{{%matrixcontent_customlink_1}}'
+      maxBlocks: 1
+      minBlocks: null
+      propagationKeyFormat: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix

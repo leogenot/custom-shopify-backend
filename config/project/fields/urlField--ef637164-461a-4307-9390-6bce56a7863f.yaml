@@ -1,0 +1,16 @@
+columnSuffix: kewqaqkm
+contentColumnType: string(255)
+fieldGroup: 4c60465d-56ea-4e52-83bb-57923cc97458 # Common
+handle: urlField
+instructions: null
+name: Url
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+    - tel
+    - email
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

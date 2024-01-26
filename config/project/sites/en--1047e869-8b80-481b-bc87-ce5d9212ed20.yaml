@@ -1,0 +1,9 @@
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: en
+hasUrls: true
+language: en-GB
+name: En
+primary: true
+siteGroup: 1c06b984-b507-4166-99c2-23e7ccbd2b42 # Custom Shopify
+sortOrder: 1

@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: footerMenu
+name: 'Footer menu'
+propagationMethod: all
+siteSettings:
+  1047e869-8b80-481b-bc87-ce5d9212ed20: # En
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: a8892f2b-6ae1-4e50-a2d6-e9e527fd904a
+type: structure
