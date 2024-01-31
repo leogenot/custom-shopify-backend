@@ -1,0 +1,47 @@
+defaultPlacement: end
+fieldLayouts:
+  ab734591-6140-42e7-a112-19e19c58f0f3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 09c02473-759b-4118-b0e3-c13249777c3a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5b73e084-e6bd-42d3-af92-defcc6129fad
+        userCondition: null
+handle: categoryType
+name: 'Category type'
+siteSettings:
+  1047e869-8b80-481b-bc87-ce5d9212ed20: # En
+    hasUrls: true
+    template: null
+    uriFormat: 'category-type/{slug}'
+structure:
+  maxLevels: null
+  uid: 1b60a5f6-5813-433a-9e6e-969e77e65414

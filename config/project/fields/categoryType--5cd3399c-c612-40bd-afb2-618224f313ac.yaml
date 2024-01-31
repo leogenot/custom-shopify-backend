@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 4c60465d-56ea-4e52-83bb-57923cc97458 # Common
-handle: entryType
+handle: categoryType
 instructions: null
-name: 'Entry type'
+name: 'Category type'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -13,8 +13,8 @@ settings:
   maxRelations: 1
   minRelations: null
   selectionLabel: null
-  showSiteMenu: false
-  source: 'group:dd80b69a-984d-486c-ad66-f98a8c4dd483'
+  showSiteMenu: true
+  source: 'group:e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79' # Product type
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

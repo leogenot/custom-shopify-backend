@@ -1,5 +1,33 @@
-dateModified: 1706279905
+dateModified: 1706701716
 elementSources:
+  craft\elements\Category:
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'group:e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79' # Product type
+      tableAttributes:
+        - link
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'group:78a10a73-3307-4664-a775-57f44bee7c16' # Category type
+      tableAttributes:
+        - link
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'group:4817083b-df5e-4f7f-9a71-10133472f314' # Collections type
+      tableAttributes:
+        - link
+      type: native
   craft\elements\Entry:
     -
       defaultSort:
@@ -127,12 +155,13 @@ meta:
     4f4a359b-b74d-43be-9eba-b231a1e253dd: Index # Index
     5a80ea5c-f947-42c7-9277-e40e987a0ce3: Link # Link
     5be45e90-7120-4be5-a6a7-841579642fa6: Headline # Headline
-    5cd3399c-c612-40bd-afb2-618224f313ac: 'Entry type' # Entry type
+    5cd3399c-c612-40bd-afb2-618224f313ac: 'Category type' # Category type
     5d2e71c7-1df7-4268-855a-c1bf35dba93b: Bullets # Bullets
     5e312397-a325-4667-b1f0-9aecd9495873: 'Responsive media' # Responsive media
     5f3c423f-e4c6-4473-b33a-eb57f84dd166: Items # Items
     5f68dae6-585b-4e9c-bf37-2133a3cc3fa7: 'All News & Events' # All News & Events
     6aad1b54-699a-4b2a-abad-d60f90f87b97: Info # Info
+    6cf9b040-5922-4e3f-b253-4e21de000aa6: 'Collections type' # Collections type
     6d3f513b-f0f6-411b-8b54-070e684dda04: 'Show image caption' # Show image caption
     6e87e440-9e69-40cf-a621-a73cfdbf3cf2: Items # Items
     6ef9cec9-a33d-44ba-bfc0-4aafd2505bdc: 'Text color' # Text color
@@ -156,10 +185,12 @@ meta:
     38d4a26c-88a3-4fc1-adbc-8dfa370af49e: Textarea # Textarea
     39f07c34-8c1b-4b8b-93cd-bb77f023f47a: 'Richtext - Header' # Richtext - Header
     50edfc92-602d-45f8-80a1-ae1524e25789: Default # Default
+    57cef0de-2130-4de2-998b-6d257a727987: 'Product tags' # Product tags
     58a8e029-3d0d-4160-bbca-f83377b84b6d: 'Entry type' # Entry type
     59d38b2c-dd7c-447c-a70f-5faa523318d0: Text # Text
     69adfdd0-6999-4c8d-974e-28568949ec8d: 'Page Hero' # Page Hero
     71b524a9-c436-43e2-992e-9b971fe665a0: Text # Text
+    78a10a73-3307-4664-a775-57f44bee7c16: 'Category type' # Category type
     78a6528a-68b2-4a8a-b99e-d3992ed9b750: Link # Link
     81a83194-da60-4348-a385-178f6615d4d9: Richtext # Richtext
     88d00e5c-8e15-4900-a448-1cb42a066c19: Weight # Weight
@@ -192,6 +223,7 @@ meta:
     660741d0-fd1a-4698-931a-09df2c3cc616: Headline # Headline
     2413398d-e673-4cc4-b977-982ab8860b2d: Headline # Headline
     3919271a-0c9b-44c9-aeb7-4e89acba93e5: Warning # Warning
+    4817083b-df5e-4f7f-9a71-10133472f314: 'Collections type' # Collections type
     a048f70f-0e8a-4aef-9458-80a75f337a8b: Reversed # Reversed
     a3b80282-c227-4b0e-80bb-13fb9c524a9c: Item # Item
     a4cd07fd-a017-4786-a780-f3d04829c0bb: Unit # Unit
@@ -232,6 +264,7 @@ meta:
     e09e8bf3-e3ab-4d22-b8b5-7f0a67bdaba9: Warning # Warning
     e2d09c3d-fd6d-479c-b32a-52667fe689ad: Link # Link
     e7bc80d2-7a8e-4cb6-b565-ea3c4c76d7c6: Medias # Medias
+    e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79: 'Product type' # Product type
     e31bcbff-2d8f-4e8b-9559-1f3137c16310: Items # Items
     e89ec6e5-3171-41c7-aa77-02b1c3e3ae8e: Headline # Headline
     e564e547-a62d-4ea0-b2cb-f1d3dbe63b30: Headline # Headline
@@ -248,6 +281,10 @@ meta:
     fbf38450-f32e-4f7d-9241-5db02efbcc29: Info # Info
     fceef115-987b-4f89-9408-e094ab7aa678: 'Tag left' # Tag left
 plugins:
+  _storefront:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   cp-css:
     edition: standard
     enabled: true
@@ -279,7 +316,7 @@ plugins:
     schemaVersion: 1.0.0
   seomatic:
     edition: standard
-    enabled: true
+    enabled: false
     licenseKey: YYW1KMQO9MW26LKR0WLP4I31
     schemaVersion: 3.0.12
     settings:
@@ -327,6 +364,20 @@ plugins:
       submitSitemaps: true
       truncateDescriptionTags: true
       truncateTitleTags: true
+  storefront:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      collectionCategoryFieldUid: 6cf9b040-5922-4e3f-b253-4e21de000aa6 # Collections type
+      collectionCategoryGroupUid: e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79 # Product type
+      productSectionUid: a13873b4-d8f5-43ad-9629-5e884869a575 # Products
+      shopHandle: $SHOPIFY_HOSTNAME
+      shopifyAdminApiPassword: $SHOPIFY_ADMIN_ACCESS_TOKEN
+      shopifyStorefrontAccessToken: $SHOPIFY_STOREFRONT_KEY
+      tagFieldUid: 57cef0de-2130-4de2-998b-6d257a727987 # Product tags
+      typeCategoryFieldUid: 5cd3399c-c612-40bd-afb2-618224f313ac # Category type
+      typeCategoryGroupUid: e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79 # Product type
   super-table:
     edition: standard
     enabled: true

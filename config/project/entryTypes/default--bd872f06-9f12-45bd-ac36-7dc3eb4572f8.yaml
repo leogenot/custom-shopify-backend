@@ -33,18 +33,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9d4fffd0-3e1e-4a99-b3c1-ac72c7c49c06 # Product title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6a3396ed-8210-4330-8c61-022d8a7fbdb6
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 02dd5cb2-b3c0-4d37-a3be-2e7562a4bf3b # Product description
             instructions: null
             label: null
@@ -183,6 +171,16 @@ fieldLayouts:
             width: 100
         name: Variants
         uid: 5ada1198-b172-4691-8a5d-d59e3de28ab9
+        userCondition: null
+      -
+        elementCondition: null
+        name: Tags
+        uid: cb888d9f-48d0-4558-86d3-fd871958ff4b
+        userCondition: null
+      -
+        elementCondition: null
+        name: Collections
+        uid: f22286a2-e852-44fd-a7e6-f199f3ffc680
         userCondition: null
 handle: default
 hasTitleField: true
