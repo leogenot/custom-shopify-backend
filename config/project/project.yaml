@@ -1,4 +1,4 @@
-dateModified: 1706701716
+dateModified: 1706880331
 elementSources:
   craft\elements\Category:
     -
@@ -281,6 +281,14 @@ meta:
     fbf38450-f32e-4f7d-9241-5db02efbcc29: Info # Info
     fceef115-987b-4f89-9408-e094ab7aa678: 'Tag left' # Tag left
 plugins:
+  _craft-shopify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  _shopify-wrapper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   _storefront:
     edition: standard
     enabled: true
@@ -293,6 +301,10 @@ plugins:
       additionalCss: "#nav {\r\n    margin-top: 10px;\r\n}\r\n\r\n#nav li a {\r\n    padding-top: 10px;\r\n    padding-left: 10px;\r\n    padding-bottom: 10px;\r\n    padding-right: 10px;\r\n}\r\n\r\n.sidebar nav li a {\r\n    margin-bottom: 5px;\r\n    padding-top: 10px;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n.sidebar .heading>span {\r\n    padding: 0;\r\n}\r\n\r\n#system-info {   \r\n    display: block;\r\n    height: auto;\r\n    background-color: transparent;\r\n    padding: 30px 10px;\r\n}\r\n\r\n#system-info:focus, #system-info:hover {\r\n    background-color: transparent !important;\r\n}\r\n\r\n#site-icon {\r\n    height: auto;\r\n}\r\n\r\n#site-icon img, #site-icon svg {\r\n    height: auto;\r\n    width: auto;\r\n}\r\n\r\n#system-name {\r\n    display: none;\r\n}\r\n\r\n#global-sidebar {\r\n    padding: 8px;\r\n    padding-bottom: 0;\r\n}\r\n\r\n#devmode {\r\n    margin: 0 -8px;\r\n    width: calc(100% + 16px);\r\n}\r\n\r\n#sidebar {\r\n    padding: 0 26px;\r\n}\r\n\r\n.sidebar#sidebar nav {\r\n    padding: 0;\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n}\r\n\r\n.sidebar nav {\r\n    padding: 0;\r\n}\r\n\r\nbody.ltr .sidebar nav>ul>li.heading>ul>li>a, body.ltr .sidebar nav>ul>li:not(.heading)>a {\r\n    padding-left: 19px;\r\n}\r\n\r\n#fields-pageModules > .blocks > div:nth-child(odd) {\r\n    border: 1px solid green;\r\n}\r\n\r\n#fields-pageModules > .blocks > div:nth-child(even) {\r\n    border: 1px solid blue;\r\n}\r\n"
       cacheBusting: true
       cssFile: ''
+  craft-shopify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   element-api:
     edition: standard
     enabled: true

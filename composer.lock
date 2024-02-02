@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82d5fd16d861920e7c022d3558f6adbb",
+    "content-hash": "e26be0db5aa70c364d2e7a72f657ae94",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2572,6 +2572,54 @@
             "time": "2019-05-10T02:16:43+00:00"
         },
         {
+            "name": "leo/craft-shopify",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "plugins/craft-shopify",
+                "reference": "ec92ba72df21c1282eeaebe962c499772c7303a3"
+            },
+            "require": {
+                "craftcms/cms": "^4.7.0",
+                "php": ">=8.0.2",
+                "phpclassic/php-shopify": "^1.2.9"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Craft Shopify",
+                "handle": "craft-shopify",
+                "developer": "leo",
+                "documentationUrl": "",
+                "components": {
+                    "craftShopifyService": "leo\\craftshopify\\services\\CraftShopifyService"
+                },
+                "class": "leo\\craftshopify\\CraftShopify"
+            },
+            "autoload": {
+                "psr-4": {
+                    "leo\\craftshopify\\": "src/"
+                }
+            },
+            "scripts": {
+                "check-cs": [
+                    "ecs check --ansi"
+                ],
+                "fix-cs": [
+                    "ecs check --ansi --fix"
+                ],
+                "phpstan": [
+                    "phpstan --memory-limit=1G"
+                ]
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
             "name": "leo/storefront",
             "version": "0.0.1",
             "dist": {
@@ -3064,6 +3112,57 @@
                 "textrank"
             ],
             "time": "2023-12-29T15:21:30+00:00"
+        },
+        {
+            "name": "phpclassic/php-shopify",
+            "version": "v1.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpclassic/php-shopify.git",
+                "reference": "6259d8b18f85248ac367d25671498424479f262e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpclassic/php-shopify/zipball/6259d8b18f85248ac367d25671498424479f262e",
+                "reference": "6259d8b18f85248ac367d25671498424479f262e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPShopify\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Tareq Mahmood",
+                    "email": "tareqtms@yahoo.com"
+                }
+            ],
+            "description": "PHP SDK for Shopify API",
+            "homepage": "https://github.com/phpclassic/php-shopify",
+            "keywords": [
+                "php",
+                "sdk",
+                "shopify"
+            ],
+            "support": {
+                "issues": "https://github.com/phpclassic/php-shopify/issues",
+                "source": "https://github.com/phpclassic/php-shopify/tree/v1.2.9"
+            },
+            "time": "2023-09-25T13:11:12+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
