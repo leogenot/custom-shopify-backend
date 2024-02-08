@@ -10,6 +10,7 @@
 
 namespace leo\craftshopify\services;
 
+use DateTime;
 
 use benf\neo\elements\Block;
 use Craft;
@@ -45,7 +46,7 @@ use yii\web\ServerErrorHttpException;
  * @since     1.0.0
  */
 class ProductService extends Component {
-    const CONFIG_PRODUCT_FIELDLAYOUT_KEY = 'craftshopify.productFieldLayout';
+    const CONFIG_PRODUCT_FIELDLAYOUT_KEY = 'craftshopify.sectionOptions';
     const METAFIELD_NAMESPACE = 'cms';
 
     /**
@@ -72,10 +73,13 @@ class ProductService extends Component {
         $product->jsonData = Json::encode($shopifyProduct);
         $product->title = $shopifyProduct['title'];
         $product->slug = $shopifyProduct['handle'];
-        $product->dateCreated = $shopifyProduct['created_at'];
-        $product->dateUpdated = $shopifyProduct['updated_at'];
+        $product->dateCreated = new DateTime($shopifyProduct['created_at']);
+        $product->dateUpdated = new DateTime($shopifyProduct['updated_at']);
         $product->productType = $shopifyProduct['product_type'];
         $product->bodyHtml = $shopifyProduct['body_html'] ?? '';
+
+        // $entry->setFieldValue('productDescription', $data['descriptionHtml']);
+        // $entry->setFieldValue('productQuantity', $data['totalInventory']);
     }
 
     /**
@@ -193,6 +197,7 @@ class ProductService extends Component {
         $shopifyId = $shopifyData['id'];
 
         $product = $this->getProductModel($shopifyId);
+        $section = Craft::$app->getSections()->getSectionByHandle('products');
         $this->populateProductModel($product, $shopifyData);
 
         return $product;

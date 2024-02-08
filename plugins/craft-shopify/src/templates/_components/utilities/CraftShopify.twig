@@ -13,7 +13,7 @@
  */
 #}
 
-{% import "_includes/forms" as forms %}
+{% import "_includes/forms.twig" as forms %}
 
 <h1>Craft Shopify</h1>
 
@@ -39,7 +39,6 @@
     {{ actionInput('craft-shopify/product/sync-products') }}
 
     <h2>Sync Product by Shopify ID</h2>
-
     {{ forms.editableTableField({
       name: 'productIds',
       id: 'productIds',
@@ -51,6 +50,9 @@
       }],
       addRowLabel: "Add Product ID"|t('blitz'),
       first: true,
+      allowAdd: true,
+      allowReorder: true,
+      allowDelete: true,
     }) }}
 
     <div>

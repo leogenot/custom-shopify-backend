@@ -29,7 +29,7 @@ return [
     "webhookSecret" => '',
 
     // Path to template file used to render product HTML sent to Shopify
-    "templatePath" => '',
+    "sectionOptions" => '',
 
     // Path to template file used to render product previews
     "previewPath" => '',

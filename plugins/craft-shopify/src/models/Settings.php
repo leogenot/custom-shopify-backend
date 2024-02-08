@@ -44,7 +44,7 @@ class Settings extends Model {
     /**
      * @var string
      */
-    public $templatePath;
+    public $sectionOptions;
 
     /**
      * @var string
