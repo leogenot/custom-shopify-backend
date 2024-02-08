@@ -13,6 +13,8 @@
  */
 #}
 
-{% extends "_layouts/elementindex" %}
+{# {% extends "_layouts/elementindex" %}
 {% set title = "Shopify Products"|t('craft-shopify') %}
-{% set elementType = 'leo\\craftshopify\\elements\\Product' %}
+{% set elementType = 'leo\\craftshopify\\elements\\Product' %} #}
+
+{% redirect 'craft-shopify/settings/shopify' %}

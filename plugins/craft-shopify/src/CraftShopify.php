@@ -84,9 +84,6 @@ class CraftShopify extends Plugin {
             UrlManager::EVENT_REGISTER_CP_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
                 $event->rules['craft-shopify'] = 'craft-shopify/default';
-                $event->rules['craft-shopify/products'] = 'craft-shopify/product';
-                $event->rules['craft-shopify/products/<productId:\d+>'] = 'craft-shopify/product/edit-product';
-                $event->rules['craft-shopify/products/<productId:\d+>/preview'] = 'craft-shopify/product/preview';
                 $event->rules['craft-shopify/settings/shopify'] = 'craft-shopify/settings/shopify';
             }
         );
@@ -99,12 +96,6 @@ class CraftShopify extends Plugin {
             }
         );
 
-        Event::on(
-            Fields::class,
-            Fields::EVENT_REGISTER_FIELD_TYPES,
-            function (RegisterComponentTypesEvent $event) {
-            }
-        );
 
         Event::on(
             Utilities::class,
@@ -114,12 +105,6 @@ class CraftShopify extends Plugin {
             }
         );
 
-        Event::on(
-            CraftVariable::class,
-            CraftVariable::EVENT_INIT,
-            function (Event $event) {
-            }
-        );
 
         Craft::info(
             Craft::t(
@@ -134,10 +119,6 @@ class CraftShopify extends Plugin {
     public function getCpNavItem(): array {
         $item = parent::getCpNavItem();
         $item['subnav'] = [
-            'products' => [
-                'label' => 'Products',
-                'url' => 'craft-shopify/products'
-            ],
             'utilities' => [
                 'label' => 'Utilities',
                 'url' => UrlHelper::cpUrl('utilities/craft-shopify')
