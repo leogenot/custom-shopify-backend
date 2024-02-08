@@ -172,16 +172,16 @@ class ProductService extends Component {
             $productRecord->bodyHtmlMetafieldId = $metafield['id'];
             $productRecord->save();
         } else {
-            $templatePath = CraftShopify::$plugin->getSettings()->templatePath;
-            $html = Craft::$app->getView()->renderTemplate($templatePath, [
-                'product' => $product
-            ], View::TEMPLATE_MODE_SITE);
+            // $templatePath = CraftShopify::$plugin->getSettings()->templatePath;
+            // $html = Craft::$app->getView()->renderTemplate($templatePath, [
+            //     'product' => $product
+            // ], View::TEMPLATE_MODE_SITE);
 
-            $client->Product($product->shopifyId)->Metafield($productRecord->bodyHtmlMetafieldId)->put([
-                'id' => $productRecord->bodyHtmlMetafieldId,
-                'value' => $html,
-                'type' => 'string'
-            ]);
+            // $client->Product($product->shopifyId)->Metafield($productRecord->bodyHtmlMetafieldId)->put([
+            //     'id' => $productRecord->bodyHtmlMetafieldId,
+            //     'value' => $html,
+            //     'type' => 'string'
+            // ]);
         }
     }
 
@@ -197,7 +197,6 @@ class ProductService extends Component {
         $shopifyId = $shopifyData['id'];
 
         $product = $this->getProductModel($shopifyId);
-        $section = Craft::$app->getSections()->getSectionByHandle('products');
         $this->populateProductModel($product, $shopifyData);
 
         return $product;
@@ -240,46 +239,46 @@ class ProductService extends Component {
      * @throws ServerErrorHttpException
      * @throws \Exception
      */
-    public function saveFieldLayout(FieldLayout $fieldLayout): bool {
-        $projectConfig = Craft::$app->getProjectConfig();
-        $fieldLayoutConfig = $fieldLayout->getConfig();
-        $uid = StringHelper::UUID();
+    // public function saveFieldLayout(FieldLayout $fieldLayout): bool {
+    //     $projectConfig = Craft::$app->getProjectConfig();
+    //     $fieldLayoutConfig = $fieldLayout->getConfig();
+    //     $uid = StringHelper::UUID();
 
-        $projectConfig->set(self::CONFIG_PRODUCT_FIELDLAYOUT_KEY, [$uid => $fieldLayoutConfig], 'Save the contact field layout');
+    //     $projectConfig->set(self::CONFIG_PRODUCT_FIELDLAYOUT_KEY, [$uid => $fieldLayoutConfig], 'Save the contact field layout');
 
-        return true;
-    }
+    //     return true;
+    // }
 
     /**
      * Handle project config changes
      *
      * @throws Exception
      */
-    public function handleChangedFieldLayout() {
-        // Use this because we want this to trigger this if anything changes inside but ONLY ONCE
-        static $parsed = false;
-        if ($parsed) {
-            return;
-        }
+    // public function handleChangedFieldLayout() {
+    //     // Use this because we want this to trigger this if anything changes inside but ONLY ONCE
+    //     static $parsed = false;
+    //     if ($parsed) {
+    //         return;
+    //     }
 
-        $parsed = true;
-        $data = Craft::$app->getProjectConfig()->get(self::CONFIG_PRODUCT_FIELDLAYOUT_KEY, true);
+    //     $parsed = true;
+    //     $data = Craft::$app->getProjectConfig()->get(self::CONFIG_PRODUCT_FIELDLAYOUT_KEY, true);
 
-        $fieldsService = Craft::$app->getFields();
+    //     $fieldsService = Craft::$app->getFields();
 
-        if (empty($data) || empty($config = reset($data))) {
-            $fieldsService->deleteLayoutsByType(Product::class);
-            return;
-        }
+    //     if (empty($data) || empty($config = reset($data))) {
+    //         $fieldsService->deleteLayoutsByType(Product::class);
+    //         return;
+    //     }
 
-        // Make sure fields are processed
-        ProjectConfig::ensureAllFieldsProcessed();
+    //     // Make sure fields are processed
+    //     ProjectConfig::ensureAllFieldsProcessed();
 
-        // Save the field layout
-        $layout = FieldLayout::createFromConfig($config);
-        $layout->id = $fieldsService->getLayoutByType(Product::class)->id;
-        $layout->type = Product::class;
-        $layout->uid = key($data);
-        $fieldsService->saveLayout($layout);
-    }
+    //     // Save the field layout
+    //     $layout = FieldLayout::createFromConfig($config);
+    //     $layout->id = $fieldsService->getLayoutByType(Product::class)->id;
+    //     $layout->type = Product::class;
+    //     $layout->uid = key($data);
+    //     $fieldsService->saveLayout($layout);
+    // }
 }

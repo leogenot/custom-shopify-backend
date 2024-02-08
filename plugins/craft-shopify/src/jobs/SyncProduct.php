@@ -16,6 +16,7 @@ use craft\helpers\Json;
 use craft\queue\BaseJob;
 use Exception;
 use leo\craftshopify\CraftShopify;
+use leo\craftshopify\elements\Product;
 
 /**
  * @author    One Design Company
@@ -41,14 +42,15 @@ class SyncProduct extends BaseJob {
         CraftShopify::$plugin->product->populateProductModel($product, $this->productData);
 
         if (Craft::$app->getElements()->saveElement($product)) {
-            // return $product;
+            $queue->setProgress(100);
+        } else {
+
+            throw new Exception('Unknown error saving product ' . $product->id);
         }
 
         if ($product->getErrors()) {
             throw new Exception('Product ' . $product->id . ' - ' . Json::encode($product->getErrors()));
         }
-
-        throw new Exception('Unknown error saving product ' . $product->id);
     }
 
     /**

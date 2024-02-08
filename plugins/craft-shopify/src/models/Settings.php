@@ -57,9 +57,10 @@ class Settings extends Model {
      */
     public function rules(): array {
         return [
-            [['apiKey', 'apiPassword', 'hostname', 'webhookSecret', 'templatePath', 'previewPath'], 'string'],
-            [['apiKey', 'apiPassword', 'hostname', 'templatePath'], 'required'],
-            [['templatePath', 'previewPath'], TemplateValidator::class]
+            [['apiKey', 'apiPassword', 'hostname', 'webhookSecret'], 'string'],
+            [
+                ['apiKey', 'apiPassword', 'hostname', 'required']
+            ]
         ];
     }
 }
