@@ -225,6 +225,7 @@ class ProductService extends Component {
             'id' => $entry->shopifyId, // Shopify ID of the product
             'title' => $entry->title, // Map Craft CMS title to Shopify title
             'handle' => $entry->slug, // Map Craft CMS title to Shopify title
+            'body_html' => $entry->productDescription, // Map Craft CMS title to Shopify title
             // 'body_html' => $entry->productDescription, // Map Craft CMS product description to Shopify body_html
             // Map other Craft CMS fields to corresponding Shopify fields as needed
         ];
