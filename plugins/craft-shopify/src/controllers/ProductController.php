@@ -15,7 +15,6 @@ use Craft;
 use craft\errors\ElementNotFoundException;
 use craft\helpers\ArrayHelper;
 use craft\helpers\Queue;
-use craft\elements\Entry;
 use craft\helpers\StringHelper;
 use craft\helpers\UrlHelper;
 use craft\web\Controller;
@@ -46,9 +45,9 @@ class ProductController extends Controller {
     /**
      * @return Response
      */
-    // public function actionIndex(): Response {
-    //     return $this->renderTemplate('craft-shopify/products');
-    // }
+    public function actionIndex(): Response {
+        return $this->renderTemplate('craft-shopify/products');
+    }
 
     /**
      * Preps product edit variables
@@ -56,17 +55,17 @@ class ProductController extends Controller {
      * @param array $variables
      * @throws NotFoundHttpException
      */
-    // private function prepEditProductVariables(array &$variables) {
-    //     if (empty($variables['product'])) {
-    //         if (!empty($variables['productId'])) {
-    //             $variables['product'] = Product::find()->id($variables['productId'])->one();
+    private function prepEditProductVariables(array &$variables) {
+        if (empty($variables['product'])) {
+            if (!empty($variables['productId'])) {
+                $variables['product'] = Product::find()->id($variables['productId'])->one();
 
-    //             if (!$variables['product']) {
-    //                 throw new NotFoundHttpException('Product not found');
-    //             }
-    //         }
-    //     }
-    // }
+                if (!$variables['product']) {
+                    throw new NotFoundHttpException('Product not found');
+                }
+            }
+        }
+    }
 
     /**
      * Preview the Craft part of a shopify product
@@ -75,22 +74,22 @@ class ProductController extends Controller {
      * @return Response
      * @throws NotFoundHttpException
      */
-    // public function actionPreview(int $productId = null): ?Response {
-    //     if (!$productId) {
-    //         return null;
-    //     }
+    public function actionPreview(int $productId = null): ?Response {
+        if (!$productId) {
+            return null;
+        }
 
-    //     $product = Product::find()->id($productId)->one();
-    //     if (!$product) {
-    //         throw new NotFoundHttpException('Product not found');
-    //     }
+        $product = Product::find()->id($productId)->one();
+        if (!$product) {
+            throw new NotFoundHttpException('Product not found');
+        }
 
-    //     $previewPath = CraftShopify::$plugin->getSettings()->previewPath;
+        $previewPath = CraftShopify::$plugin->getSettings()->previewPath;
 
-    //     return $this->renderTemplate($previewPath, [
-    //         'product' => $product
-    //     ], View::TEMPLATE_MODE_SITE);
-    // }
+        return $this->renderTemplate($previewPath, [
+            'product' => $product
+        ], View::TEMPLATE_MODE_SITE);
+    }
 
     /**
      * Edit view for a product element
@@ -100,24 +99,24 @@ class ProductController extends Controller {
      * @return Response
      * @throws NotFoundHttpException
      */
-    // public function actionEditProduct(int $productId = null, Product $product = null): Response {
-    //     $variables = [
-    //         'productId' => $productId,
-    //         'product' => $product
-    //     ];
+    public function actionEditProduct(int $productId = null, Product $product = null): Response {
+        $variables = [
+            'productId' => $productId,
+            'product' => $product
+        ];
 
-    //     $this->prepEditProductVariables($variables);
+        $this->prepEditProductVariables($variables);
 
-    //     $product = $variables['product'];
+        $product = $variables['product'];
 
-    //     /** @var Product $product */
-    //     $variables['bodyClass'] = 'edit-product';
-    //     if (CraftShopify::$plugin->getSettings()->previewPath) {
-    //         $variables['previewUrl'] = UrlHelper::cpUrl('craft-shopify/products/' . $product->id . '/preview');
-    //     }
+        /** @var Product $product */
+        $variables['bodyClass'] = 'edit-product';
+        if (CraftShopify::$plugin->getSettings()->previewPath) {
+            $variables['previewUrl'] = UrlHelper::cpUrl('craft-shopify/products/' . $product->id . '/preview');
+        }
 
-    //     return $this->renderTemplate('craft-shopify/products/_edit', $variables);
-    // }
+        return $this->renderTemplate('craft-shopify/products/_edit', $variables);
+    }
 
     /**
      * Save Product element
@@ -128,71 +127,43 @@ class ProductController extends Controller {
      * @throws Exception
      * @throws BadRequestHttpException
      */
-    // public function actionSave(): ?Response {
-    //     $this->requirePostRequest();
+    public function actionSave(): ?Response {
+        $this->requirePostRequest();
 
-    //     $productId = $this->request->getRequiredParam('productId');
-    //     $product = Product::find()->id($productId)->one();
-    //     // Check if the product exists
-    //     if (!$product) {
-    //         Craft::$app->getSession()->setNotice('Product not found');
-    //         throw new Exception('Product not found');
-    //     }
+        $productId = $this->request->getRequiredParam('productId');
+        $product = Product::find()->id($productId)->one();
 
-    //     $section = Craft::$app->getSections()->getSectionByHandle(
-    //         'products'
-    //     );
+        $product->setFieldValuesFromRequest('fields');
 
-    //     if (!$section) {
-    //         Craft::$app->getSession()->setNotice('Section not found');
-    //         throw new Exception('Section not found');
-    //     }
-    //     Craft::$app->getSession()->setNotice('Section found');
-    //     // $entry = new Entry();
-    //     // $entry->sectionId = $section->id;
-    //     // $entry->typeId = $section->getEntryTypes()[0]->id;
-    //     // $entry->enabled = false;
+        if (!Craft::$app->getElements()->saveElement($product)) {
+            if ($this->request->getAcceptsJson()) {
+                return $this->asJson([
+                    'success' => false,
+                    'errors' => $product->getErrors()
+                ]);
+            }
 
-    //     $entry = new Entry();
-    //     $entry->sectionId = $section->id;
-    //     $entry->typeId = $section->getEntryTypes()[0]->id;
-    //     $entry->title = $product->title; // Set entry title to product title
-    //     $entry->enabled = true; // You can set this to true if you want the entry to be enabled by default
+            $this->setFailFlash('Couldn\'t save Product');
+            Craft::$app->getUrlManager()->setRouteParams([
+                'product' => $product
+            ]);
 
-    //     // Set other fields from the product as desired
-    //     // For example:
-    //     // $entry->setFieldValues([
-    //     //     'fieldHandle1' => $product->fieldValue1,
-    //     //     'fieldHandle2' => $product->fieldValue2,
-    //     //     // Add other fields as needed
-    //     // ]);
+            return null;
+        }
 
-    //     // Save the entry
-    //     if (!Craft::$app->getElements()->saveElement($entry)) {
-    //         if ($this->request->getAcceptsJson()) {
-    //             return $this->asJson([
-    //                 'success' => false,
-    //                 'errors' => $entry->getErrors()
-    //             ]);
-    //         }
+        if ($this->request->getAcceptsJson()) {
+            return $this->asJson([
+                'success' => true,
+                'id' => $product->id,
+                'title' => $product->title,
+                'shopifyId' => $product->shopifyId,
+                'cpEditUrl' => $product->getCpEditUrl()
+            ]);
+        }
 
-    //         $this->setFailFlash('Couldn\'t save Product');
-    //         return null;
-    //     }
-
-    //     if ($this->request->getAcceptsJson()) {
-    //         return $this->asJson([
-    //             'success' => true,
-    //             'id' => $entry->id,
-    //             'title' => $entry->title,
-    //             // Add other fields as needed
-    //         ]);
-    //     }
-
-    //     $this->setSuccessFlash('Product Saved');
-    //     return $this->redirectToPostedUrl($entry);
-    // }
-
+        $this->setSuccessFlash('Product Saved');
+        return $this->redirectToPostedUrl($product);
+    }
 
     /**
      * Remove all products that are no longer in Shopify
@@ -204,42 +175,42 @@ class ProductController extends Controller {
      * @throws CurlException
      * @since 1.1.0
      */
-    // public function actionPurgeProducts(): ?Response {
-    //     $this->requirePostRequest();
+    public function actionPurgeProducts(): ?Response {
+        $this->requirePostRequest();
 
-    //     $params = [
-    //         'published_status' => 'published',
-    //         'status' => 'active,draft',
-    //         'limit' => -1
-    //     ];
+        $params = [
+            'published_status' => 'published',
+            'status' => 'active,draft',
+            'limit' => -1
+        ];
 
-    //     $products = CraftShopify::$plugin->shopify->getAllProducts($params);
-    //     $shopifyIds = ArrayHelper::getColumn($products, 'id');
-    //     $errorCount = 0;
-    //     $successCount = 0;
+        $products = CraftShopify::$plugin->shopify->getAllProducts($params);
+        $shopifyIds = ArrayHelper::getColumn($products, 'id');
+        $errorCount = 0;
+        $successCount = 0;
 
-    //     $removed = Product::find()
-    //         ->select(['elements.id', 'shopifyId'])
-    //         ->where(['not in', 'shopifyId', $shopifyIds])
-    //         ->all();
+        $removed = Product::find()
+            ->select(['elements.id', 'shopifyId'])
+            ->where(['not in', 'shopifyId', $shopifyIds])
+            ->all();
 
-    //     $removedIds = ArrayHelper::getColumn($removed, 'shopifyId');
-    //     foreach ($removedIds as $removedId) {
-    //         if (!CraftShopify::$plugin->product->deleteByShopifyId($removedId)) {
-    //             $errorCount++;
-    //         } else {
-    //             $successCount++;
-    //         }
-    //     }
+        $removedIds = ArrayHelper::getColumn($removed, 'shopifyId');
+        foreach ($removedIds as $removedId) {
+            if (!CraftShopify::$plugin->product->deleteByShopifyId($removedId)) {
+                $errorCount++;
+            } else {
+                $successCount++;
+            }
+        }
 
-    //     if ($errorCount > 0) {
-    //         $this->setFailFlash('Failed to remove ' . $errorCount . ' products');
-    //         return null;
-    //     }
+        if ($errorCount > 0) {
+            $this->setFailFlash('Failed to remove ' . $errorCount . ' products');
+            return null;
+        }
 
-    //     $this->setSuccessFlash('Successfully removed ' . $successCount . ' products');
-    //     return $this->redirectToPostedUrl();
-    // }
+        $this->setSuccessFlash('Successfully removed ' . $successCount . ' products');
+        return $this->redirectToPostedUrl();
+    }
 
     /**
      * Sync Craft product with Shopify

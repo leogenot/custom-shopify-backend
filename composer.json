@@ -14,6 +14,7 @@
         "nystudio107/craft-seomatic": "4.0.38",
         "sebastianlenz/linkfield": "^2.1",
         "spacecatninja/imager-x": "4.2.4",
+        "spicyweb/craft-neo": "4.0.3",
         "vaersaagod/matrixmate": "^2.1",
         "verbb/super-table": "^3.0",
         "vlucas/phpdotenv": "^5.4.0"
