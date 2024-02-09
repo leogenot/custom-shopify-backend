@@ -23,6 +23,7 @@ use leo\craftshopify\services\WebhookService;
 use leo\craftshopify\utilities\CraftShopifyUtility as CraftShopifyUtilityUtility;
 use yii\base\Event;
 use yii\base\ModelEvent;
+use yii\base\Exception;
 
 /**
  * Craft Shopify plugin
@@ -57,7 +58,7 @@ class CraftShopify extends Plugin {
 
         Event::on(
             Entry::class,
-            Entry::EVENT_AFTER_SAVE,
+            Entry::EVENT_BEFORE_SAVE,
             function (ModelEvent $event) {
                 /** @var Entry $entry */
                 $entry = $event->sender;
@@ -65,7 +66,7 @@ class CraftShopify extends Plugin {
                 if (ElementHelper::isDraftOrRevision($entry)) {
                     return;
                 }
-
+                // throw new Exception('title' . $entry->title);
                 CraftShopify::$plugin->product->updateRelatedProducts($entry);
             }
         );

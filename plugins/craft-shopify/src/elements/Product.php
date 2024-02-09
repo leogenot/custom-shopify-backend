@@ -13,6 +13,7 @@ namespace leo\craftshopify\elements;
 
 use Craft;
 use craft\base\Element;
+use craft\elements\Entry;
 use craft\elements\db\ElementQueryInterface;
 use craft\helpers\Html;
 use craft\helpers\Json;
@@ -336,11 +337,11 @@ class Product extends Element {
 
         $this->id = $productRecord->id;
 
-        if (!$this->isWebhookUpdate) {
-            Queue::push(new PushProductData([
-                'productId' => $this->id,
-            ]));
-        }
+        // if (!$this->isWebhookUpdate) {
+        //     Queue::push(new PushProductData([
+        //         'productId' => $this->id,
+        //     ]));
+        // }
 
         parent::afterSave($isNew);
     }
@@ -371,5 +372,23 @@ class Product extends Element {
      */
     public function afterMoveInStructure(int $structureId): void {
         parent::afterMoveInStructure($structureId);
+    }
+
+    /**
+     * Get the entry associated with this product
+     *
+     * @return Entry|null The associated entry, or null if not found
+     */
+    public function getEntry(): ?Entry {
+        // Check if the product has been saved and has a shopifyId set
+        if (!$this->id || !$this->shopifyId) {
+            return null;
+        }
+
+        // Find the entry associated with this product by its shopifyId
+        return Entry::find()
+            ->section('products')
+            ->shopifyId($this->shopifyId)
+            ->one();
     }
 }

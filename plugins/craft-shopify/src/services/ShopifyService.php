@@ -3,33 +3,37 @@
 /**
  * craft-shopify module for Craft CMS 3.x
  *
- * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
  */
 
-
 namespace leo\craftshopify\services;
-
 
 use Craft;
 use craft\base\Component;
 use craft\helpers\ArrayHelper;
 use leo\craftshopify\CraftShopify;
 use PHPShopify\ShopifySDK;
+use Exception;
 
 /**
- * @author    One Design Company
- * @package   craft-shopify
- * @since     1.0.0
+ * Service responsible for interfacing with Shopify API.
+ * Handles authentication and API requests.
+ *
  */
 class ShopifyService extends Component {
     protected $client = null;
 
+    /**
+     * Get the Shopify client instance.
+     *
+     * @return ShopifySDK
+     * @throws \PHPShopify\Exception\ApiException
+     * @throws \PHPShopify\Exception\CurlException
+     */
     public function getClient() {
         if (!$this->client) {
             $settings = CraftShopify::$plugin->getSettings();
 
-            // TODO: add error if these don't exist
+            // Initialize Shopify SDK client with provided settings
             $this->client = ShopifySDK::config([
                 'ShopUrl' => Craft::parseEnv($settings['hostname']),
                 'ApiKey' => Craft::parseEnv($settings['apiKey']),
@@ -41,6 +45,10 @@ class ShopifyService extends Component {
     }
 
     /**
+     * Retrieves all products from the Shopify store.
+     *
+     * @param array $params Additional parameters for filtering products.
+     * @return array Fetched products.
      * @throws \PHPShopify\Exception\ApiException
      * @throws \PHPShopify\Exception\CurlException
      */
@@ -48,14 +56,12 @@ class ShopifyService extends Component {
         $shopify = $this->getClient();
         $resource = $shopify->Product;
 
+        // Prepare pagination parameters
         $nextPageParams = ArrayHelper::merge([
             'limit' => 100
         ], $params);
 
-        /**
-         * if -1 was passed in for the limit we need to go through the
-         * pagination to get _everything_
-         */
+        // If -1 was passed in for the limit, paginate to get all products
         if ($nextPageParams['limit'] === -1) {
             $products = [];
             $nextPageParams['limit'] = 100;
@@ -68,21 +74,50 @@ class ShopifyService extends Component {
 
             return $products;
         } else {
+            // Retrieve products without pagination
             return $resource->get($nextPageParams);
         }
     }
 
     /**
-     * @param string | int $id
-     * @return array|null
+     * Retrieves product information from Shopify by ID.
+     *
+     * @param string|int $id Product ID.
+     * @return array|null Product information if found, null otherwise.
      * @throws \PHPShopify\Exception\ApiException
      * @throws \PHPShopify\Exception\CurlException
      */
     public function getProductById($id): ?array {
+        // Return null if no ID provided
         if (!$id) {
             return null;
         }
 
+        // Retrieve product information from Shopify by ID
         return $this->getClient()->Product($id)->get();
+    }
+
+    /**
+     * Pushes a product to Shopify.
+     *
+     * @param array $productData The data of the product to be pushed to Shopify.
+     * @return array The response from Shopify after pushing the product.
+     * @throws \PHPShopify\Exception\ApiException
+     * @throws \PHPShopify\Exception\CurlException
+     */
+    public function pushProduct(array $productData): array {
+        // Get the Shopify client
+        $shopify = $this->getClient();
+
+        // Create or update the product on Shopify
+        if (isset($productData['id'])) {
+            // Update existing product
+            $productId = $productData['id'];
+            // unset($productData['id']); // Remove the Shopify ID from the data
+            return $shopify->Product($productId)->put($productData);
+        } else {
+            // Create new product
+            return $shopify->Product->post($productData);
+        }
     }
 }

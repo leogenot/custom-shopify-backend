@@ -11,6 +11,7 @@
         "doublesecretagency/craft-cpcss": "^2.6",
         "leo/craft-shopify": "dev-main",
         "leo/storefront": "^0.0.1",
+        "nystudio107/craft-code-field": "4.0.12",
         "nystudio107/craft-seomatic": "4.0.38",
         "sebastianlenz/linkfield": "^2.1",
         "spacecatninja/imager-x": "4.2.4",

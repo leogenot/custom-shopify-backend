@@ -40,16 +40,16 @@ class SyncProduct extends BaseJob {
         $shopifyId = $this->productData['id'];
         $product = CraftShopify::$plugin->product->getProductModel($shopifyId);
         CraftShopify::$plugin->product->populateProductModel($product, $this->productData);
-
-        if (Craft::$app->getElements()->saveElement($product)) {
+        $entry = CraftShopify::$plugin->product->updateEntry($this->productData);
+        if (Craft::$app->getElements()->saveElement($product) && $entry) {
             $queue->setProgress(100);
         } else {
 
-            throw new Exception('Unknown error saving product ' . $product->id);
+            throw new Exception('Unknown error saving product ' . $shopifyId);
         }
 
         if ($product->getErrors()) {
-            throw new Exception('Product ' . $product->id . ' - ' . Json::encode($product->getErrors()));
+            throw new Exception('Product ' . $shopifyId . ' - ' . Json::encode($product->getErrors()));
         }
     }
 

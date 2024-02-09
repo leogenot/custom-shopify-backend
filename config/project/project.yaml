@@ -1,4 +1,4 @@
-dateModified: 1707406289
+dateModified: 1707476182
 elementSources:
   craft\elements\Category:
     -
@@ -263,9 +263,11 @@ meta:
     df975600-2e5f-4f95-9797-1022b161c1b1: 'Footer menu' # Footer menu
     e09e8bf3-e3ab-4d22-b8b5-7f0a67bdaba9: Warning # Warning
     e2d09c3d-fd6d-479c-b32a-52667fe689ad: Link # Link
+    e6cc2d07-2ff5-48dd-8684-3f057552c0e1: 'Shopify Id' # Shopify Id
     e7bc80d2-7a8e-4cb6-b565-ea3c4c76d7c6: Medias # Medias
     e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79: 'Product type' # Product type
     e31bcbff-2d8f-4e8b-9559-1f3137c16310: Items # Items
+    e80b1d22-c570-4ece-8f25-1a995a9d62bb: 'Product Json Data' # Product Json Data
     e89ec6e5-3171-41c7-aa77-02b1c3e3ae8e: Headline # Headline
     e564e547-a62d-4ea0-b2cb-f1d3dbe63b30: Headline # Headline
     ea573766-63d9-4649-927e-646ed2609c9a: 'Page Modules' # Page Modules
@@ -290,6 +292,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   _storefront:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  codefield:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
