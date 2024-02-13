@@ -41,7 +41,7 @@ class PushProductData extends BaseJob {
     public function execute($queue): void {
         if ($this->productId) {
 
-            $product = Product::find()->id($this->productId)->one();
+            $product = Entry::find()->section('products')->shopifyId([$this->productId])->one();
             if (!$product) {
                 throw new Exception("Product {$this->productId} not found");
             }
