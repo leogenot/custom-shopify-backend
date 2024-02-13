@@ -1,7 +1,7 @@
 <?php
 
 /**
- * craft-shopify module for Craft CMS 3.x
+ * craft-shopify module for Craft CMS 4.x
  *
  */
 

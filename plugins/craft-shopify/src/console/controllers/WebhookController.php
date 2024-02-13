@@ -1,7 +1,7 @@
 <?php
 
 /**
- * slumberkins-cms module for Craft CMS 3.x
+ * slumberkins-cms module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
  * @copyright Copyright (c) 2021 One Design Company

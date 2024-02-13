@@ -1,7 +1,7 @@
 <?php
 
 /**
- * craft-shopify-cms module for Craft CMS 3.x
+ * craft-shopify-cms module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
  * @copyright Copyright (c) 2021 One Design Company

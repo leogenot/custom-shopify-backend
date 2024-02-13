@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Craft Shopify plugin for Craft CMS 3.x
+ * Craft Shopify plugin for Craft CMS 4.x
  *
  * Bring Shopify products into Craft
  *

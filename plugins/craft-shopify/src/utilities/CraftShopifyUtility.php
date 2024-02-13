@@ -1,11 +1,10 @@
 <?php
 
 /**
- * Craft Shopify plugin for Craft CMS 3.x
+ * Craft Shopify plugin for Craft CMS 4.x
  *
  * Bring Shopify products into Craft
  *
- * @link      https://onedesigncompany.com/
  * @copyright Copyright (c) 2021 One Design Company
  */
 
