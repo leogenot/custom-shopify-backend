@@ -4,7 +4,7 @@
  * slumberkins-cms module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 
@@ -17,11 +17,7 @@ use DateTime;
 use Exception;
 use leo\craftshopify\records\WebhookResponseRecord;
 
-/**
- * @author    One Design Company
- * @package   slumberkins-cms
- * @since     1.0.0
- */
+
 class PurgeWebhookResponses extends BaseJob {
 
     /**

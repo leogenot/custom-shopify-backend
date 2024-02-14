@@ -4,7 +4,7 @@
  * craft-shopify module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 
@@ -16,11 +16,7 @@ use leo\craftshopify\CraftShopify;
 use leo\craftshopify\models\Settings;
 use yii\web\Response;
 
-/**
- * @author    One Design Company
- * @package   craft-shopify
- * @since     1.0.0
- */
+
 class SettingsController extends Controller {
 
     /**

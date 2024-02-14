@@ -5,8 +5,8 @@
  *
  * Bring Shopify products into Craft
  *
- * @link      https://leocompany.com/
- * @copyright Copyright (c) 2021 One Design Company
+ * 
+ * 
  */
 
 namespace leo\craftshopify\controllers;
@@ -22,11 +22,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\ForbiddenHttpException;
 use yii\web\Response;
 
-/**
- * @author    One Design Company
- * @package   CraftShopify
- * @since     1.0.0
- */
+
 class DefaultController extends Controller {
 
     /**

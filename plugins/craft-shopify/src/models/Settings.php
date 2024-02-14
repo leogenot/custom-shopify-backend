@@ -5,8 +5,8 @@
  *
  * Bring Shopify products into Craft
  *
- * @link      https://leocompany.com/
- * @copyright Copyright (c) 2021 One Design Company
+ * 
+ * 
  */
 
 namespace leo\craftshopify\models;
@@ -14,11 +14,7 @@ namespace leo\craftshopify\models;
 use craft\base\Model;
 use craft\validators\TemplateValidator;
 
-/**
- * @author    One Design Company
- * @package   CraftShopify
- * @since     1.0.0
- */
+
 class Settings extends Model {
     /**
      * @var string

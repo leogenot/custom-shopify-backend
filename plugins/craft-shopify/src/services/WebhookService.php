@@ -4,7 +4,7 @@
  * craft-shopify-cms module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 
@@ -19,11 +19,6 @@ use leo\craftshopify\models\WebhookResponse;
 use leo\craftshopify\records\WebhookResponseRecord;
 use Throwable;
 
-/**
- * @author    One Design Company
- * @package   craft-shopify-cms
- * @since     1.0.0
- */
 class WebhookService extends Component {
 
     /**

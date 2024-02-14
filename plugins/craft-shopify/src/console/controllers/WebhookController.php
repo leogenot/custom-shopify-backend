@@ -4,7 +4,7 @@
  * slumberkins-cms module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 namespace leo\craftshopify\console\controllers;
@@ -14,13 +14,7 @@ use leo\craftshopify\CraftShopify;
 use yii\console\ExitCode;
 
 
-/**
- * Allows you to manage webhooks
- *
- * @author    One Design Company
- * @package   slumberkins-cms
- * @since     1.0.0
- */
+
 class WebhookController extends Controller {
     public $defaultAction = 'purge';
 

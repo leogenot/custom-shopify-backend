@@ -4,7 +4,7 @@
  * craft-shopify module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 namespace leo\craftshopify\elements\db;
@@ -15,9 +15,7 @@ use leo\craftshopify\elements\Product;
 
 
 /**
- * @author    One Design Company
- * @package   craft-shopify
- * @since     1.0.0
+
  *
  * @method Product|null one($db = null)
  * @method Product[]|array|null all($db = null)

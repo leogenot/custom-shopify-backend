@@ -4,7 +4,7 @@
  * craft-shopify-cms module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 
@@ -15,9 +15,6 @@ use craft\db\ActiveRecord;
 use craft\helpers\Json;
 
 /**
- * @author    One Design Company
- * @package   craft-shopify-cms
- * @since     1.0.0
  *
  * @property string $payload
  * @property string $errors

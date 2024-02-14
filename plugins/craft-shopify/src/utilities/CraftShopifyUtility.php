@@ -5,7 +5,7 @@
  *
  * Bring Shopify products into Craft
  *
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 namespace leo\craftshopify\utilities;
@@ -20,9 +20,7 @@ use craft\base\Utility;
 /**
  * Craft Shopify Utility
  *
- * @author    One Design Company
- * @package   CraftShopify
- * @since     1.0.0
+
  */
 class CraftShopifyUtility extends Utility {
     // Static

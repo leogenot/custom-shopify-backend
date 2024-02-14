@@ -4,7 +4,7 @@
  * craft-shopify module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 
@@ -19,11 +19,7 @@ use leo\craftshopify\CraftShopify;
 use leo\craftshopify\elements\Product;
 use craft\elements\Entry;
 
-/**
- * @author    One Design Company
- * @package   craft-shopify
- * @since     1.0.0
- */
+
 class SyncProduct extends BaseJob {
     /**
      * @var array

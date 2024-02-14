@@ -5,8 +5,8 @@
  *
  * Bring Shopify products into Craft
  *
- * @link      https://leocompany.com/
- * @copyright Copyright (c) 2021 One Design Company
+ * 
+ * 
  */
 
 namespace leo\craftshopify\elements;
@@ -27,9 +27,7 @@ use leo\craftshopify\jobs\PushProductData;
 use leo\craftshopify\records\ProductRecord;
 
 /**
- * @author    One Design Company
- * @package   CraftShopify
- * @since     1.0.0
+
  *
  * @property int $shopifyId
  * @property string $jsonData
@@ -136,6 +134,13 @@ class Product extends Element {
             'shopifyEdit' => ['label' => Craft::t('craft-shopify', 'Shopify Edit URL')],
             'dateUpdated' => ['label' => Craft::t('app', 'Date Updated')],
             'dateCreated' => ['label' => Craft::t('app', 'Date Created')],
+            'datePublished' => ['label' => Craft::t('app', 'Date Published')],
+            'publishedScope' => ['label' => Craft::t('craft-shopify', 'publishedScope')],
+            'tags' => ['label' => Craft::t('craft-shopify', 'tags')],
+            'status' => ['label' => Craft::t('craft-shopify', 'status')],
+            'adminGraphQlApiId' => ['label' => Craft::t('craft-shopify', 'adminGraphQlApiId')],
+            'variants' => ['label' => Craft::t('craft-shopify', 'variants')],
+            'bodyHtml' => ['label' => Craft::t('craft-shopify', 'bodyHtml')],
         ];
     }
 
@@ -332,6 +337,7 @@ class Product extends Element {
 
         $productRecord->dateUpdated = $this->dateUpdated;
         $productRecord->dateCreated = $this->dateCreated;
+        $productRecord->datePublished = $this->datePublished;
 
         $productRecord->save(false);
 

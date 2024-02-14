@@ -4,7 +4,7 @@
  * craft-shopify module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 
@@ -25,11 +25,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\ForbiddenHttpException;
 use yii\web\Response;
 
-/**
- * @author    One Design Company
- * @package   craft-shopify
- * @since     1.0.0
- */
+
 class WebhookController extends Controller {
     /**
      * @inheritdoc

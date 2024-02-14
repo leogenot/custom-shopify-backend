@@ -4,7 +4,7 @@
  * craft-shopify module for Craft CMS 4.x
  *
  * @link      https://leocompany.com
- * @copyright Copyright (c) 2021 One Design Company
+ * 
  */
 
 
@@ -16,9 +16,7 @@ use craft\db\ActiveRecord;
 use craft\records\Element;
 
 /**
- * @author    One Design Company
- * @package   craft-shopify
- * @since     1.0.0
+
  *
  * @property int $shopifyId
  * @property string $jsonData
