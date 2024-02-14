@@ -3,7 +3,7 @@
 /**
  * craft-shopify module for Craft CMS 4.x
  *
- * @link      https://leocompany.com
+
  * 
  */
 
