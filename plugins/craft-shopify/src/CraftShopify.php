@@ -120,10 +120,10 @@ class CraftShopify extends Plugin {
     public function getCpNavItem(): array {
         $item = parent::getCpNavItem();
         $item['subnav'] = [
-            'utilities' => [
-                'label' => 'Utilities',
-                'url' => UrlHelper::cpUrl('utilities/craft-shopify')
-            ],
+            // 'utilities' => [
+            //     'label' => 'Utilities',
+            //     'url' => UrlHelper::cpUrl('utilities/craft-shopify')
+            // ],
         ];
 
         if (Craft::$app->config->general->allowAdminChanges) {

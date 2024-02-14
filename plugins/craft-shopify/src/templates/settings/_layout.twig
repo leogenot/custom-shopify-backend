@@ -21,6 +21,10 @@
 {% if currentUser.admin %}
   {% set navItems = navItems | merge({
     
+    'utilities': {
+      label: 'Utilities',
+      url: 'craft-shopify/settings/utilities'
+    },
     'shopify': {
       label: 'Shopify',
       url: 'craft-shopify/settings/shopify'
