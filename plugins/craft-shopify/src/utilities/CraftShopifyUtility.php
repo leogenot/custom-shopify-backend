@@ -16,6 +16,9 @@ use leo\craftshopify\assetbundles\craftshopifyutilityutility\CraftShopifyUtility
 
 use Craft;
 use craft\base\Utility;
+use craft\models\Section;
+use craft\models\Section_SiteSettings;
+use utils\Str;
 
 /**
  * Craft Shopify Utility
@@ -61,5 +64,33 @@ class CraftShopifyUtility extends Utility {
         Craft::$app->getView()->registerAssetBundle(CraftShopifyUtilityUtilityAsset::class);
 
         return Craft::$app->getView()->renderTemplate('craft-shopify/_components/utilities/CraftShopify');
+    }
+
+    public static function createSection($sectionName): void {
+
+        $section = new Section([
+            'name' => $sectionName,
+            'handle' => Str::to_camel($sectionName),
+            'type' => Section::TYPE_CHANNEL,
+            'siteSettings' => [
+                new Section_SiteSettings([
+                    'siteId' => Craft::$app->sites->getPrimarySite()->id,
+                    'enabledByDefault' => true,
+                    'hasUrls' => true,
+                    'uriFormat' => Str::to_camel($sectionName) . '/{slug}',
+                    'template' => Str::to_camel($sectionName) . '/_entry',
+                ]),
+            ]
+        ]);
+
+        try {
+            $success = Craft::$app->sections->saveSection($section);
+        } catch (\craft\errors\EntryTypeNotFoundException $e) {
+            die("<pre>" . var_export("From \\craft\\errors\\EntryTypeNotFoundException: {$e->getMessage()}", true) . "</pre>");
+        } catch (\Throwable $e) {
+            die("<pre>" . var_export("From \\Throwable: {$e->getMessage()}", true) . "</pre>");
+        } finally {
+            die("<pre>" . var_export($success, true) . "</pre>");
+        }
     }
 }

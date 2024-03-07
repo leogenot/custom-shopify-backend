@@ -24,6 +24,8 @@ use leo\craftshopify\utilities\CraftShopifyUtility as CraftShopifyUtilityUtility
 use yii\base\Event;
 use yii\base\ModelEvent;
 use yii\base\Exception;
+use craft\events\PluginEvent;
+use craft\services\Plugins;
 
 /**
  * Craft Shopify plugin
@@ -103,6 +105,20 @@ class CraftShopify extends Plugin {
             Utilities::EVENT_REGISTER_UTILITY_TYPES,
             function (RegisterComponentTypesEvent $event) {
                 $event->types[] = CraftShopifyUtilityUtility::class;
+            }
+        );
+
+        // Handler: EVENT_AFTER_INSTALL_PLUGIN
+        Event::on(
+            Plugins::class,
+            Plugins::EVENT_AFTER_INSTALL_PLUGIN,
+            function (PluginEvent $event) {
+                if ($event->plugin === $this) {
+                    // $productSection = CraftShopifyUtilityUtility::createSection('Products');
+                    // if (!$productSection) {
+                    //     Craft::error('Unable to create Products section', __METHOD__);
+                    // }
+                }
             }
         );
 
