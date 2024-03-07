@@ -66,23 +66,32 @@ class ProductService extends Component {
      * @param Product $product Product model instance
      * @param array $shopifyProduct Shopify product data
      */
+    // public function populateProductModel(Product $product, $shopifyProduct) {
+    //     // Encode Shopify product data as JSON and assign to product model attributes
+    //     $product->jsonData = Json::encode($shopifyProduct);
+    //     $product->title = $shopifyProduct['title'];
+    //     $product->slug = $shopifyProduct['handle'];
+    //     $product->dateCreated = new DateTime($shopifyProduct['created_at']);
+    //     $product->datePublished = new DateTime($shopifyProduct['published_at']);
+    //     $product->dateUpdated = new DateTime($shopifyProduct['updated_at']);
+    //     $product->productType = $shopifyProduct['product_type'];
+    //     $product->publishedScope = $shopifyProduct['published_scope'] ?? '';
+    //     $product->tags = $shopifyProduct['tags'] ?? '';
+    //     $product->status = $shopifyProduct['status'] ?? '';
+    //     $product->adminGraphQlApiId = $shopifyProduct['admin_graph_ql_api_id'] ?? '';
+    //     $product->variants = $shopifyProduct['variants'] ?? '';
+    //     $product->bodyHtml = $shopifyProduct['body_html'] ?? '';
+    // }
     public function populateProductModel(Product $product, $shopifyProduct) {
         // Encode Shopify product data as JSON and assign to product model attributes
         $product->jsonData = Json::encode($shopifyProduct);
         $product->title = $shopifyProduct['title'];
         $product->slug = $shopifyProduct['handle'];
         $product->dateCreated = new DateTime($shopifyProduct['created_at']);
-        $product->datePublished = new DateTime($shopifyProduct['published_at']);
         $product->dateUpdated = new DateTime($shopifyProduct['updated_at']);
         $product->productType = $shopifyProduct['product_type'];
-        $product->publishedScope = $shopifyProduct['published_scope'] ?? '';
-        $product->tags = $shopifyProduct['tags'] ?? '';
-        $product->status = $shopifyProduct['status'] ?? '';
-        $product->adminGraphQlApiId = $shopifyProduct['admin_graph_ql_api_id'] ?? '';
-        $product->variants = $shopifyProduct['variants'] ?? '';
         $product->bodyHtml = $shopifyProduct['body_html'] ?? '';
     }
-
     /**
      * Populate the Craft entry with Shopify response data
      *

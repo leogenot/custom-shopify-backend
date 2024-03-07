@@ -126,6 +126,22 @@ class Product extends Element {
      */
     protected static function defineTableAttributes(): array {
         return [
+            // 'title' => Craft::t('app', 'Title'),
+            // 'thumb' => ['label' => Craft::t('craft-shopify', 'Thumbnail')],
+            // 'shopifyId' => ['label' => Craft::t('craft-shopify', 'Shopify ID')],
+            // 'productType' => ['label' => Craft::t('craft-shopify', 'Product Type')],
+            // 'shopifyView' => ['label' => Craft::t('craft-shopify', 'Shopify View URL')],
+            // 'shopifyEdit' => ['label' => Craft::t('craft-shopify', 'Shopify Edit URL')],
+            // 'dateUpdated' => ['label' => Craft::t('app', 'Date Updated')],
+            // 'dateCreated' => ['label' => Craft::t('app', 'Date Created')],
+            // 'datePublished' => ['label' => Craft::t('app', 'Date Published')],
+            // 'publishedScope' => ['label' => Craft::t('craft-shopify', 'publishedScope')],
+            // 'tags' => ['label' => Craft::t('craft-shopify', 'tags')],
+            // 'status' => ['label' => Craft::t('craft-shopify', 'status')],
+            // 'adminGraphQlApiId' => ['label' => Craft::t('craft-shopify', 'adminGraphQlApiId')],
+            // 'variants' => ['label' => Craft::t('craft-shopify', 'variants')],
+            // 'bodyHtml' => ['label' => Craft::t('craft-shopify', 'bodyHtml')],
+
             'title' => Craft::t('app', 'Title'),
             'thumb' => ['label' => Craft::t('craft-shopify', 'Thumbnail')],
             'shopifyId' => ['label' => Craft::t('craft-shopify', 'Shopify ID')],
@@ -134,12 +150,6 @@ class Product extends Element {
             'shopifyEdit' => ['label' => Craft::t('craft-shopify', 'Shopify Edit URL')],
             'dateUpdated' => ['label' => Craft::t('app', 'Date Updated')],
             'dateCreated' => ['label' => Craft::t('app', 'Date Created')],
-            'datePublished' => ['label' => Craft::t('app', 'Date Published')],
-            'publishedScope' => ['label' => Craft::t('craft-shopify', 'publishedScope')],
-            'tags' => ['label' => Craft::t('craft-shopify', 'tags')],
-            'status' => ['label' => Craft::t('craft-shopify', 'status')],
-            'adminGraphQlApiId' => ['label' => Craft::t('craft-shopify', 'adminGraphQlApiId')],
-            'variants' => ['label' => Craft::t('craft-shopify', 'variants')],
             'bodyHtml' => ['label' => Craft::t('craft-shopify', 'bodyHtml')],
         ];
     }
@@ -337,7 +347,6 @@ class Product extends Element {
 
         $productRecord->dateUpdated = $this->dateUpdated;
         $productRecord->dateCreated = $this->dateCreated;
-        $productRecord->datePublished = $this->datePublished;
 
         $productRecord->save(false);
 
@@ -351,7 +360,6 @@ class Product extends Element {
 
         parent::afterSave($isNew);
     }
-
     /**
      * @inheritdoc
      */

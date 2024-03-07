@@ -1,4 +1,4 @@
-dateModified: 1707821682
+dateModified: 1709822382
 elementSources:
   craft\elements\Category:
     -
@@ -98,7 +98,7 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'section:787ae384-86e2-42f5-8992-2f3248499275' # Main menu
+      key: 'section:787ae384-86e2-42f5-8992-2f3248499275'
       tableAttributes:
         - postDate
         - expiryDate
@@ -106,7 +106,7 @@ elementSources:
         - link
       type: native
     -
-      key: 'section:df975600-2e5f-4f95-9797-1022b161c1b1' # Footer menu
+      key: 'section:df975600-2e5f-4f95-9797-1022b161c1b1'
       type: native
     -
       key: 'section:9ae6df13-6d1e-4cfd-9cf3-8141b5b4a85f'
@@ -152,7 +152,6 @@ meta:
     4c050537-070e-4953-b986-9b6e8903e049: Products # Products
     4c60465d-56ea-4e52-83bb-57923cc97458: Common # Common
     4ecfe397-4ca6-47b9-9f2d-c3824f83224b: 'Entry Carousel' # Entry Carousel
-    4f4a359b-b74d-43be-9eba-b231a1e253dd: Index # Index
     5a80ea5c-f947-42c7-9277-e40e987a0ce3: Link # Link
     5be45e90-7120-4be5-a6a7-841579642fa6: Headline # Headline
     5cd3399c-c612-40bd-afb2-618224f313ac: 'Category type' # Category type
@@ -184,7 +183,6 @@ meta:
     37efb20f-88a2-4020-ab19-9d65725f7067: 'Dual Teaser' # Dual Teaser
     38d4a26c-88a3-4fc1-adbc-8dfa370af49e: Textarea # Textarea
     39f07c34-8c1b-4b8b-93cd-bb77f023f47a: 'Richtext - Header' # Richtext - Header
-    50edfc92-602d-45f8-80a1-ae1524e25789: Default # Default
     57cef0de-2130-4de2-998b-6d257a727987: 'Product tags' # Product tags
     58a8e029-3d0d-4160-bbca-f83377b84b6d: 'Entry type' # Entry type
     59d38b2c-dd7c-447c-a70f-5faa523318d0: Text # Text
@@ -196,7 +194,6 @@ meta:
     88d00e5c-8e15-4900-a448-1cb42a066c19: Weight # Weight
     92f30535-adcc-4f9f-b5b1-60042746f6c5: Textfield # Textfield
     127fb155-166e-4996-bbfe-a130373c57ff: Link # Link
-    147e54a8-fa89-43ba-972f-c99df8a6eb43: Default # Default
     198d065e-729a-42ed-a34a-438ac25b88e6: Tag # Tag
     202c7458-1c92-4184-ba71-3ed53b632500: Tag # Tag
     308a8186-e506-473b-99f4-64f96e0794ac: 'Tag right' # Tag right
@@ -205,21 +202,18 @@ meta:
     520f8c9d-df73-4870-b6b7-84ef848fe18e: Headline # Headline
     620e8bdf-2551-4e90-abfc-4ec607565261: 'All Press' # All Press
     676c5398-f1fb-4940-8728-50a47b1279d4: Link # Link
-    787ae384-86e2-42f5-8992-2f3248499275: 'Main menu' # Main menu
     875ddcb2-5ebb-4e5c-b2e8-df2b8d16d467: 'Rooms Carousel' # Rooms Carousel
     896fd6fd-26d2-4480-b641-acfa5a037eb1: Headline # Headline
     941d68f7-4e2f-499e-aadc-707fba548f85: 'Product quantity' # Product quantity
     1047e869-8b80-481b-bc87-ce5d9212ed20: En # En
     6767a8c2-9e70-403f-894c-db67293a9518: Link # Link
     7055b72b-a0b3-43e3-889f-11cddcc2c60f: 'Responsive media' # Responsive media
-    7155a496-2699-440f-9628-082b0af469a9: 'Error page' # Error page
     8554cfab-f0ff-4325-af7c-d57d02af800b: 'Custom link' # Custom link
     9558a12f-f2c0-400d-bade-e256dded714f: List # List
     37494ced-87df-4a71-95e7-5ff598ecef54: 'Product weight' # Product weight
     041511d7-bee4-4cef-8292-19024a001bd3: Entries # Entries
     45747ae3-7ff5-4f53-a00a-776b00d906da: 'Show image caption' # Show image caption
     68843b40-25df-4563-aeb5-8dfca909747b: Tag # Tag
-    95072f3f-0f86-49de-9f0d-4226751cb0cf: Index # Index
     660741d0-fd1a-4698-931a-09df2c3cc616: Headline # Headline
     2413398d-e673-4cc4-b977-982ab8860b2d: Headline # Headline
     3919271a-0c9b-44c9-aeb7-4e89acba93e5: Warning # Warning
@@ -243,7 +237,6 @@ meta:
     b935c2a3-8db9-4f83-a0bd-7c1f3b37ba8c: Media # Media
     b27511eb-67e1-4b84-a3bb-9966c1284964: Icon # Icon
     b5505176-4e5c-437b-a949-83381822d12e: Tag # Tag
-    bb258364-7152-4469-a31e-83e9374d1331: 'Error page' # Error page
     bd872f06-9f12-45bd-ac36-7dc3eb4572f8: Default # Default
     be6f80ce-90c7-47f2-9c12-08a22648cae9: Tag # Tag
     bfe689ab-f4c8-4ca9-8150-b56e193158e4: Layout # Layout
@@ -260,7 +253,6 @@ meta:
     dd34ba2f-e52f-4af3-a24f-07b7843021b5: Headline # Headline
     de67e196-ad55-4210-8298-5a59eb02bbd9: Warning # Warning
     def7b936-876b-42c4-91aa-0e4217be184f: Default # Default
-    df975600-2e5f-4f95-9797-1022b161c1b1: 'Footer menu' # Footer menu
     e09e8bf3-e3ab-4d22-b8b5-7f0a67bdaba9: Warning # Warning
     e2d09c3d-fd6d-479c-b32a-52667fe689ad: Link # Link
     e6cc2d07-2ff5-48dd-8684-3f057552c0e1: 'Shopify Id' # Shopify Id
