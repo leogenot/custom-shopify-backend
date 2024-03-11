@@ -1,4 +1,4 @@
-dateModified: 1710158190
+dateModified: 1710158220
 elementSources:
   craft\elements\Category:
     -
@@ -228,10 +228,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  webhooks:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.4.0
 system:
   edition: pro
   live: true
