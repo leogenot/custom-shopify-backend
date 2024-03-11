@@ -1,4 +1,4 @@
-dateModified: 1709824146
+dateModified: 1710158190
 elementSources:
   craft\elements\Category:
     -
@@ -6,7 +6,7 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'group:e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79' # Product type
+      key: 'group:e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79'
       tableAttributes:
         - link
       type: native
@@ -15,7 +15,7 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'group:78a10a73-3307-4664-a775-57f44bee7c16' # Category type
+      key: 'group:78a10a73-3307-4664-a775-57f44bee7c16'
       tableAttributes:
         - link
       type: native
@@ -24,7 +24,7 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'group:4817083b-df5e-4f7f-9a71-10133472f314' # Collections type
+      key: 'group:4817083b-df5e-4f7f-9a71-10133472f314'
       tableAttributes:
         - link
       type: native
@@ -44,86 +44,23 @@ elementSources:
       type: native
     -
       defaultSort:
-        - slug
-        - asc
-      disabled: false
-      key: singles
-      tableAttributes:
-        - link
-      type: native
-    -
-      heading: 'Page types'
-      type: heading
-    -
-      defaultSort:
         - postDate
         - desc
       disabled: false
-      key: 'section:284d21da-7377-485f-b767-50483254f34d'
+      key: 'section:128e704b-a4ec-4a7f-9267-637db9630924'
       tableAttributes:
         - postDate
         - expiryDate
         - author
         - link
       type: native
-    -
-      defaultSort:
-        - postDate
-        - desc
-      disabled: false
-      key: 'section:ebd08f61-59fb-4185-a2f6-4b2cf5a190bc'
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - author
-        - link
-      type: native
-    -
-      defaultSort:
-        - postDate
-        - desc
-      disabled: false
-      key: 'section:156dd8ca-1896-4b0e-9b11-586644c437cd'
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - author
-        - link
-      type: native
-    -
-      heading: Menus
-      type: heading
-    -
-      defaultSort:
-        - structure
-        - asc
-      disabled: false
-      key: 'section:787ae384-86e2-42f5-8992-2f3248499275'
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - author
-        - link
-      type: native
-    -
-      key: 'section:df975600-2e5f-4f95-9797-1022b161c1b1'
-      type: native
-    -
-      key: 'section:9ae6df13-6d1e-4cfd-9cf3-8141b5b4a85f'
-      type: native
-    -
-      heading: ''
-      type: heading
-    -
-      key: 'section:7243b080-0f4d-424b-9824-c6f2f656ad18'
-      type: native
-    -
-      heading: ''
-      type: heading
 email:
   fromEmail: dev@springsummer.dk
   fromName: 'Bella Donna'
   transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  '':
+    name: 'Product Fields'
 fs:
   assets:
     hasUrls: true
@@ -135,42 +72,27 @@ fs:
 meta:
   __names__:
     0eb6c413-07d2-4737-be17-ec53e88584b8: Link # Link
-    0f13a14e-3716-47b4-9706-0a32094fdbf4: 'Product shipping?' # Product shipping?
-    0fbae9bb-c452-420a-bf47-7952f53d0cb6: Entries # Entries
     1b783c4f-bd80-401c-b377-8dcaaf0ffb68: Media # Media
-    1bfe91d5-cdc2-4560-8e6e-9f4398ba42f1: 'Text - limited' # Text - limited
     1c06b984-b507-4166-99c2-23e7ccbd2b42: 'Custom Shopify' # Custom Shopify
     01c27f3d-48f7-4759-8491-63fda533f8ed: 'Image Teaser' # Image Teaser
     2d19b980-c6d5-4ec4-bba9-b6987c7e9611: Content # Content
-    02dd5cb2-b3c0-4d37-a3be-2e7562a4bf3b: 'Product description' # Product description
-    2ea1f122-0f01-44ef-bf4e-03943d8f4ebb: Settings # Settings
-    2faba7cf-91e5-4a88-b4b5-154f3b19075b: 'Date 2' # Date 2
     3b329d09-0244-4772-a51f-a0707022c5b3: 'All Offers & Packages' # All Offers & Packages
-    3e08b9ac-2168-41ca-8138-b194650efdd2: 'Product weight' # Product weight
     3fbdccf5-3d82-4362-b9d8-d8e273a38564: 'Tag left' # Tag left
     4a63451e-1c46-4b2b-89ae-df07b8630665: Items # Items
-    4c050537-070e-4953-b986-9b6e8903e049: Products # Products
-    4c60465d-56ea-4e52-83bb-57923cc97458: Common # Common
     4ecfe397-4ca6-47b9-9f2d-c3824f83224b: 'Entry Carousel' # Entry Carousel
     5a80ea5c-f947-42c7-9277-e40e987a0ce3: Link # Link
     5be45e90-7120-4be5-a6a7-841579642fa6: Headline # Headline
-    5cd3399c-c612-40bd-afb2-618224f313ac: 'Category type' # Category type
     5d2e71c7-1df7-4268-855a-c1bf35dba93b: Bullets # Bullets
     5e312397-a325-4667-b1f0-9aecd9495873: 'Responsive media' # Responsive media
     5f3c423f-e4c6-4473-b33a-eb57f84dd166: Items # Items
     5f68dae6-585b-4e9c-bf37-2133a3cc3fa7: 'All News & Events' # All News & Events
     6aad1b54-699a-4b2a-abad-d60f90f87b97: Info # Info
-    6cf9b040-5922-4e3f-b253-4e21de000aa6: 'Collections type' # Collections type
     6d3f513b-f0f6-411b-8b54-070e684dda04: 'Show image caption' # Show image caption
     6e87e440-9e69-40cf-a621-a73cfdbf3cf2: Items # Items
     6ef9cec9-a33d-44ba-bfc0-4aafd2505bdc: 'Text color' # Text color
     7f9e33e7-9f68-483f-8eab-d649a71e0286: 'Show image captions' # Show image captions
     07fedf19-0946-4fea-abb7-bbf308f9e2e7: Headline # Headline
-    8af67d69-ef21-4c87-9484-82d406b37733: 'Product barcode' # Product barcode
-    9d4fffd0-3e1e-4a99-b3c1-ac72c7c49c06: 'Product title' # Product title
-    9d494553-0593-4ca4-969b-3d3f46a80a50: 'Product price' # Product price
     13e567bf-f8ac-4de9-8914-30745f6bc860: Entry # Entry
-    17ffb6f4-123f-458a-bb7e-0d7fc44523aa: 'Product medias' # Product medias
     24ae792c-53e5-48b1-9d46-7e1af52c6c31: Right # Right
     30c68743-dafc-4323-94f9-4b28cb27d8fc: Entry # Entry
     31a60245-d9ed-46e7-a661-d55f83c47300: Text # Text
@@ -181,17 +103,9 @@ meta:
     36cdc76b-4a86-481f-baf5-8f4f42ca738b: Columns # Columns
     37d934a7-712d-4c75-babf-32f3ba2a5688: Media # Media
     37efb20f-88a2-4020-ab19-9d65725f7067: 'Dual Teaser' # Dual Teaser
-    38d4a26c-88a3-4fc1-adbc-8dfa370af49e: Textarea # Textarea
-    39f07c34-8c1b-4b8b-93cd-bb77f023f47a: 'Richtext - Header' # Richtext - Header
-    57cef0de-2130-4de2-998b-6d257a727987: 'Product tags' # Product tags
-    58a8e029-3d0d-4160-bbca-f83377b84b6d: 'Entry type' # Entry type
-    59d38b2c-dd7c-447c-a70f-5faa523318d0: Text # Text
     69adfdd0-6999-4c8d-974e-28568949ec8d: 'Page Hero' # Page Hero
     71b524a9-c436-43e2-992e-9b971fe665a0: Text # Text
-    78a10a73-3307-4664-a775-57f44bee7c16: 'Category type' # Category type
     78a6528a-68b2-4a8a-b99e-d3992ed9b750: Link # Link
-    81a83194-da60-4348-a385-178f6615d4d9: Richtext # Richtext
-    88d00e5c-8e15-4900-a448-1cb42a066c19: Weight # Weight
     92f30535-adcc-4f9f-b5b1-60042746f6c5: Textfield # Textfield
     127fb155-166e-4996-bbfe-a130373c57ff: Link # Link
     198d065e-729a-42ed-a34a-438ac25b88e6: Tag # Tag
@@ -201,43 +115,31 @@ meta:
     510cea0e-aa20-43e0-80a2-af40fb596356: Headline # Headline
     520f8c9d-df73-4870-b6b7-84ef848fe18e: Headline # Headline
     620e8bdf-2551-4e90-abfc-4ec607565261: 'All Press' # All Press
-    676c5398-f1fb-4940-8728-50a47b1279d4: Link # Link
     875ddcb2-5ebb-4e5c-b2e8-df2b8d16d467: 'Rooms Carousel' # Rooms Carousel
     896fd6fd-26d2-4480-b641-acfa5a037eb1: Headline # Headline
-    941d68f7-4e2f-499e-aadc-707fba548f85: 'Product quantity' # Product quantity
     1047e869-8b80-481b-bc87-ce5d9212ed20: En # En
     6767a8c2-9e70-403f-894c-db67293a9518: Link # Link
-    7055b72b-a0b3-43e3-889f-11cddcc2c60f: 'Responsive media' # Responsive media
     8554cfab-f0ff-4325-af7c-d57d02af800b: 'Custom link' # Custom link
     9558a12f-f2c0-400d-bade-e256dded714f: List # List
-    37494ced-87df-4a71-95e7-5ff598ecef54: 'Product weight' # Product weight
     041511d7-bee4-4cef-8292-19024a001bd3: Entries # Entries
     45747ae3-7ff5-4f53-a00a-776b00d906da: 'Show image caption' # Show image caption
     68843b40-25df-4563-aeb5-8dfca909747b: Tag # Tag
     660741d0-fd1a-4698-931a-09df2c3cc616: Headline # Headline
     2413398d-e673-4cc4-b977-982ab8860b2d: Headline # Headline
     3919271a-0c9b-44c9-aeb7-4e89acba93e5: Warning # Warning
-    4817083b-df5e-4f7f-9a71-10133472f314: 'Collections type' # Collections type
     a048f70f-0e8a-4aef-9458-80a75f337a8b: Reversed # Reversed
     a3b80282-c227-4b0e-80bb-13fb9c524a9c: Item # Item
-    a4cd07fd-a017-4786-a780-f3d04829c0bb: Unit # Unit
     a4df4597-7f09-4358-8460-d357905a981d: Media # Media
     a7ca077f-a851-432a-8c7b-7147f9a892c9: 'Custom link' # Custom link
-    a8d11985-5161-4273-8c3b-154af3abe1d6: Media # Media
-    a9cb6727-3b0e-4b1f-a876-6b601e2a54f1: 'Product SKU' # Product SKU
     a56ab205-61a5-4deb-8aa8-61a61a329675: Items # Items
-    a94b73a7-3163-422d-ad01-84f79ad1f533: Image # Image
     a8227c69-063e-45e4-821b-858e1de4dfe9: Image # Image
-    a13873b4-d8f5-43ad-9629-5e884869a575: Products # Products
     a2754926-d09b-4f83-aefe-501d934e71d4: Closable # Closable
-    aca2d99c-1158-41c0-8b0c-b61c305f70a0: Footer # Footer
     add8265c-3aeb-4a66-ac9c-a82af78abf31: Link # Link
     b2d1f2c3-d934-48e6-ab30-a27468acbeaa: 'Fullscreen media' # Fullscreen media
     b8d154ec-090b-4c58-a4d5-4894e7ccda08: Info # Info
     b935c2a3-8db9-4f83-a0bd-7c1f3b37ba8c: Media # Media
     b27511eb-67e1-4b84-a3bb-9966c1284964: Icon # Icon
     b5505176-4e5c-437b-a949-83381822d12e: Tag # Tag
-    bd872f06-9f12-45bd-ac36-7dc3eb4572f8: Default # Default
     be6f80ce-90c7-47f2-9c12-08a22648cae9: Tag # Tag
     bfe689ab-f4c8-4ca9-8150-b56e193158e4: Layout # Layout
     c1e40e15-2241-4142-9b1b-bdf8f9855cd6: Reversed # Reversed
@@ -255,22 +157,16 @@ meta:
     def7b936-876b-42c4-91aa-0e4217be184f: Default # Default
     e09e8bf3-e3ab-4d22-b8b5-7f0a67bdaba9: Warning # Warning
     e2d09c3d-fd6d-479c-b32a-52667fe689ad: Link # Link
-    e6cc2d07-2ff5-48dd-8684-3f057552c0e1: 'Shopify Id' # Shopify Id
     e7bc80d2-7a8e-4cb6-b565-ea3c4c76d7c6: Medias # Medias
-    e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79: 'Product type' # Product type
     e31bcbff-2d8f-4e8b-9559-1f3137c16310: Items # Items
-    e80b1d22-c570-4ece-8f25-1a995a9d62bb: 'Product Json Data' # Product Json Data
     e89ec6e5-3171-41c7-aa77-02b1c3e3ae8e: Headline # Headline
     e564e547-a62d-4ea0-b2cb-f1d3dbe63b30: Headline # Headline
-    ea573766-63d9-4649-927e-646ed2609c9a: 'Page Modules' # Page Modules
-    ef637164-461a-4307-9390-6bce56a7863f: Url # Url
     f0e439c1-51cf-410f-8375-fdb487d77f76: Text # Text
     f02beb95-b907-40b0-8c52-264aae8a3ca5: 'Homepage Hero' # Homepage Hero
     f4f0da20-3f64-4b4d-9c2d-49916f806b76: Links # Links
     f9fc7333-9e84-4116-9a85-7ce93821b5eb: Gallery # Gallery
     f72ff1e6-b747-4bd1-9d0f-f5bd1afd1987: 'Responsive media' # Responsive media
     f9543ccd-d05f-4090-a67e-7f9e52d218ef: Link # Link
-    f5530212-6e17-4b6f-8122-d2efcb377750: Lightswitch # Lightswitch
     fb53847b-c206-48b9-8217-e0640beafb74: 'Text Teaser' # Text Teaser
     fbf38450-f32e-4f7d-9241-5db02efbcc29: Info # Info
     fceef115-987b-4f89-9408-e094ab7aa678: 'Tag left' # Tag left
@@ -299,19 +195,10 @@ plugins:
       additionalCss: "#nav {\r\n    margin-top: 10px;\r\n}\r\n\r\n#nav li a {\r\n    padding-top: 10px;\r\n    padding-left: 10px;\r\n    padding-bottom: 10px;\r\n    padding-right: 10px;\r\n}\r\n\r\n.sidebar nav li a {\r\n    margin-bottom: 5px;\r\n    padding-top: 10px;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n.sidebar .heading>span {\r\n    padding: 0;\r\n}\r\n\r\n#system-info {   \r\n    display: block;\r\n    height: auto;\r\n    background-color: transparent;\r\n    padding: 30px 10px;\r\n}\r\n\r\n#system-info:focus, #system-info:hover {\r\n    background-color: transparent !important;\r\n}\r\n\r\n#site-icon {\r\n    height: auto;\r\n}\r\n\r\n#site-icon img, #site-icon svg {\r\n    height: auto;\r\n    width: auto;\r\n}\r\n\r\n#system-name {\r\n    display: none;\r\n}\r\n\r\n#global-sidebar {\r\n    padding: 8px;\r\n    padding-bottom: 0;\r\n}\r\n\r\n#devmode {\r\n    margin: 0 -8px;\r\n    width: calc(100% + 16px);\r\n}\r\n\r\n#sidebar {\r\n    padding: 0 26px;\r\n}\r\n\r\n.sidebar#sidebar nav {\r\n    padding: 0;\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n}\r\n\r\n.sidebar nav {\r\n    padding: 0;\r\n}\r\n\r\nbody.ltr .sidebar nav>ul>li.heading>ul>li>a, body.ltr .sidebar nav>ul>li:not(.heading)>a {\r\n    padding-left: 19px;\r\n}\r\n\r\n#fields-pageModules > .blocks > div:nth-child(odd) {\r\n    border: 1px solid green;\r\n}\r\n\r\n#fields-pageModules > .blocks > div:nth-child(even) {\r\n    border: 1px solid blue;\r\n}\r\n"
       cacheBusting: true
       cssFile: ''
-  craft-shopify:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   element-api:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  imager-x:
-    edition: pro
-    enabled: true
-    licenseKey: T5UGSFZG0WVNBYWZ4BGUIMSS
-    schemaVersion: 4.0.0
   matrixmate:
     edition: standard
     enabled: true
@@ -329,70 +216,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  seomatic:
-    edition: standard
-    enabled: false
-    licenseKey: YYW1KMQO9MW26LKR0WLP4I31
-    schemaVersion: 3.0.12
-    settings:
-      addHrefLang: true
-      addPaginatedHreflang: true
-      addXDefaultHrefLang: true
-      alwaysIncludeCanonicalUrls: false
-      cpTitlePrefix: ''
-      cspNonce: ''
-      cspScriptSrcPolicies:
-        -
-          __assoc__:
-            -
-              - policy
-              - '''self'''
-      devModeCpTitlePrefix: ''
-      devModeTitlePrefix: '&#x1f6a7; '
-      displayAnalysisSidebar: true
-      displayPreviewSidebar: true
-      enableJsonLdEndpoint: true
-      enableMetaContainerEndpoint: true
-      enableSeoFileLinkEndpoint: true
-      environment: live
-      excludeNonCanonicalUrls: false
-      generatorEnabled: true
-      headersEnabled: true
-      includeHomepageInBreadcrumbs: true
-      lowercaseCanonicalUrl: true
-      manuallySetEnvironment: false
-      maxDescriptionLength: 155
-      maxTitleLength: 70
-      metaCacheDuration: 0
-      pluginName: SEOmatic
-      regenerateSitemapsAutomatically: true
-      renderEnabled: false
-      separatorChar: '|'
-      sidebarDisplayPreviewTypes:
-        - google
-        - twitter
-        - facebook
-      siteGroupsSeparate: true
-      siteUrlOverride: '@rootSiteUrl'
-      sitemapsEnabled: true
-      socialMediaPreviewTarget: true
-      submitSitemaps: true
-      truncateDescriptionTags: true
-      truncateTitleTags: true
-  storefront:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.1
-    settings:
-      collectionCategoryFieldUid: 6cf9b040-5922-4e3f-b253-4e21de000aa6 # Collections type
-      collectionCategoryGroupUid: e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79 # Product type
-      productSectionUid: a13873b4-d8f5-43ad-9629-5e884869a575 # Products
-      shopHandle: $SHOPIFY_HOSTNAME
-      shopifyAdminApiPassword: $SHOPIFY_ADMIN_ACCESS_TOKEN
-      shopifyStorefrontAccessToken: $SHOPIFY_STOREFRONT_KEY
-      tagFieldUid: 57cef0de-2130-4de2-998b-6d257a727987 # Product tags
-      typeCategoryFieldUid: 5cd3399c-c612-40bd-afb2-618224f313ac # Category type
-      typeCategoryGroupUid: e9fe8b41-42b3-4d30-b05d-a4ffeb5d3b79 # Product type
   super-table:
     edition: standard
     enabled: true

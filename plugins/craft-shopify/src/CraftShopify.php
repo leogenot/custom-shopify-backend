@@ -21,6 +21,7 @@ use leo\craftshopify\services\ProductService;
 use leo\craftshopify\services\ShopifyService;
 use leo\craftshopify\services\WebhookService;
 use leo\craftshopify\utilities\CraftShopifyUtility as CraftShopifyUtilityUtility;
+use leo\craftshopify\utilities\CraftShopifySetup;
 use yii\base\Event;
 use yii\base\ModelEvent;
 use yii\base\Exception;
@@ -68,7 +69,6 @@ class CraftShopify extends Plugin {
                 if (ElementHelper::isDraftOrRevision($entry)) {
                     return;
                 }
-                // throw new Exception('title' . $entry->title);
                 CraftShopify::$plugin->product->updateRelatedProducts($entry);
             }
         );
@@ -108,16 +108,36 @@ class CraftShopify extends Plugin {
             }
         );
 
+
+
+        // Instantiate the migration class
+
+        // Call the safeUp() method
         // Handler: EVENT_AFTER_INSTALL_PLUGIN
         Event::on(
             Plugins::class,
             Plugins::EVENT_AFTER_INSTALL_PLUGIN,
             function (PluginEvent $event) {
+                $migration = new CraftShopifySetup();
                 if ($event->plugin === $this) {
-                    // $productSection = CraftShopifyUtilityUtility::createSection('Products');
-                    // if (!$productSection) {
-                    //     Craft::error('Unable to create Products section', __METHOD__);
-                    // }
+                    $safeUpResult = $migration->safeUp();
+                    if (!$safeUpResult) {
+                        Craft::error('Unable to create Products section', __METHOD__);
+                    }
+                }
+            }
+        );
+        // Handler: EVENT_AFTER_UNINSTALL_PLUGIN
+        Event::on(
+            Plugins::class,
+            Plugins::EVENT_AFTER_UNINSTALL_PLUGIN,
+            function (PluginEvent $event) {
+                if ($event->plugin === $this) {
+                    $migration = new CraftShopifySetup();
+                    $safeDownResult = $migration->safeDown();
+                    if (!$safeDownResult) {
+                        Craft::error('Unable to create Products section', __METHOD__);
+                    }
                 }
             }
         );

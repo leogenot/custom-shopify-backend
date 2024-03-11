@@ -4,15 +4,13 @@
     "require": {
         "carlcs/craft-redactorcustomstyles": "^4.0",
         "carlcs/craft-uielementfields": "^2.0",
-        "craftcms/cms": "4.7.0",
+        "craftcms/cms": "4.8.1",
         "craftcms/element-api": "3.0.1.1",
         "craftcms/redactor": "^3.0",
         "craftcms/webhooks": "^3.0",
         "doublesecretagency/craft-cpcss": "^2.6",
         "leo/craft-shopify": "dev-main",
-        "leo/storefront": "^0.0.1",
         "nystudio107/craft-code-field": "4.0.12",
-        "nystudio107/craft-seomatic": "4.0.38",
         "sebastianlenz/linkfield": "^2.1",
         "spacecatninja/imager-x": "4.2.4",
         "spicyweb/craft-neo": "4.0.3",
@@ -51,10 +49,6 @@
             "type": "composer",
             "url": "https://composer.craftcms.com",
             "canonical": false
-        },
-        {
-            "type": "path",
-            "url": "plugins/storefront"
         },
         {
             "type": "path",
