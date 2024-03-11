@@ -1,0 +1,35 @@
+columnSuffix: fcyttdkp
+contentColumnType: text
+fieldGroup: 9e615391-8b9d-42cc-ad8b-f93ed9276260 # Products
+handle: productJsonData
+instructions: null
+name: 'JSON Data'
+searchable: false
+settings:
+  availableLanguages:
+    - css
+    - graphql
+    - html
+    - javascript
+    - json
+    - markdown
+    - mysql
+    - php
+    - shell
+    - twig
+    - typescript
+    - yaml
+  codeFolding: false
+  columnType: text
+  defaultValue: ''
+  fontSize: 14
+  language: javascript
+  lineNumbers: false
+  monacoEditorOptions: ''
+  placeholder: ''
+  showLanguageDropdown: true
+  singleLineEditor: false
+  theme: auto
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\codefield\fields\Code

@@ -1,0 +1,83 @@
+fieldLayouts:
+  9aa4e72f-0838-42eb-8ef4-99bad9624b0e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 63837ed1-a180-4a3c-9ac3-3a4136266886
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d7de5b41-d9f2-4ef8-82b7-aec59f8ac554 # Shopify Id
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 48390c3c-ec6f-4235-b793-d95f004c9977
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1fbc15c7-66c7-41c0-8659-3be4bcdf27f7 # Product description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa459530-4db2-48b2-914a-b7c103bd9da3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 94ebaded-b5da-4f03-bf51-baf58f377899 # JSON Data
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09baae7b-f04d-4875-820f-f39ec7d7c269
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 36411e1f-dcf4-41af-ab2a-df4356895ae1
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 2c701826-3564-4d29-b1f0-3b011f8e76f3 # Products
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

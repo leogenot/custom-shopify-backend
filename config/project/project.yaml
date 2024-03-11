@@ -1,4 +1,4 @@
-dateModified: 1710160727
+dateModified: 1710166656
 elementSources:
   craft\elements\Category:
     -
@@ -61,6 +61,10 @@ email:
 fieldGroups:
   '':
     name: 'Product Fields'
+  9e615391-8b9d-42cc-ad8b-f93ed9276260: # Products
+    name: Products
+  db292b46-b1e0-4cad-bfa6-c5aba283fd39: # Products
+    name: Products
 fs:
   assets:
     hasUrls: true
@@ -75,6 +79,8 @@ meta:
     1b783c4f-bd80-401c-b377-8dcaaf0ffb68: Media # Media
     1c06b984-b507-4166-99c2-23e7ccbd2b42: 'Custom Shopify' # Custom Shopify
     01c27f3d-48f7-4759-8491-63fda533f8ed: 'Image Teaser' # Image Teaser
+    1fbc15c7-66c7-41c0-8659-3be4bcdf27f7: 'Product description' # Product description
+    2c701826-3564-4d29-b1f0-3b011f8e76f3: Products # Products
     2d19b980-c6d5-4ec4-bba9-b6987c7e9611: Content # Content
     3b329d09-0244-4772-a51f-a0707022c5b3: 'All Offers & Packages' # All Offers & Packages
     3fbdccf5-3d82-4362-b9d8-d8e273a38564: 'Tag left' # Tag left
@@ -92,7 +98,9 @@ meta:
     6ef9cec9-a33d-44ba-bfc0-4aafd2505bdc: 'Text color' # Text color
     7f9e33e7-9f68-483f-8eab-d649a71e0286: 'Show image captions' # Show image captions
     07fedf19-0946-4fea-abb7-bbf308f9e2e7: Headline # Headline
+    9e615391-8b9d-42cc-ad8b-f93ed9276260: Products # Products
     13e567bf-f8ac-4de9-8914-30745f6bc860: Entry # Entry
+    18c89f89-fdb8-40ce-8823-04181e63dd81: Default # Default
     24ae792c-53e5-48b1-9d46-7e1af52c6c31: Right # Right
     30c68743-dafc-4323-94f9-4b28cb27d8fc: Entry # Entry
     31a60245-d9ed-46e7-a661-d55f83c47300: Text # Text
@@ -103,10 +111,12 @@ meta:
     36cdc76b-4a86-481f-baf5-8f4f42ca738b: Columns # Columns
     37d934a7-712d-4c75-babf-32f3ba2a5688: Media # Media
     37efb20f-88a2-4020-ab19-9d65725f7067: 'Dual Teaser' # Dual Teaser
+    68dd7f73-3c5f-4a60-acf5-4259d9c4f8d4: Products # Products
     69adfdd0-6999-4c8d-974e-28568949ec8d: 'Page Hero' # Page Hero
     71b524a9-c436-43e2-992e-9b971fe665a0: Text # Text
     78a6528a-68b2-4a8a-b99e-d3992ed9b750: Link # Link
     92f30535-adcc-4f9f-b5b1-60042746f6c5: Textfield # Textfield
+    94ebaded-b5da-4f03-bf51-baf58f377899: 'JSON Data' # JSON Data
     127fb155-166e-4996-bbfe-a130373c57ff: Link # Link
     198d065e-729a-42ed-a34a-438ac25b88e6: Tag # Tag
     202c7458-1c92-4184-ba71-3ed53b632500: Tag # Tag
@@ -149,18 +159,24 @@ meta:
     c25c4da9-00c6-4de5-87e2-096c18dd3201: Item # Item
     cd225b7f-272f-4081-9a0c-88749790b513: Entries # Entries
     cfeaf304-9265-4c87-9d94-a8c7a1f39a45: 'Card Carousel' # Card Carousel
+    d7de5b41-d9f2-4ef8-82b7-aec59f8ac554: 'Shopify Id' # Shopify Id
     d8f882ec-fc67-4e36-be86-d7a19aa8d447: Left # Left
     d12e78b0-196a-4458-8963-0c7e00537f2c: Media # Media
     d749ade5-969e-4d92-9b22-c6b726ae50e8: 'Tag right' # Tag right
+    d11934d3-4fcb-4b34-ba2c-ef76aff56d3f: 'JSON Data' # JSON Data
+    d22684af-98f1-4efe-8201-c30d64fe7008: 'Shopify Id' # Shopify Id
+    db292b46-b1e0-4cad-bfa6-c5aba283fd39: Products # Products
     dd34ba2f-e52f-4af3-a24f-07b7843021b5: Headline # Headline
     de67e196-ad55-4210-8298-5a59eb02bbd9: Warning # Warning
     def7b936-876b-42c4-91aa-0e4217be184f: Default # Default
     e09e8bf3-e3ab-4d22-b8b5-7f0a67bdaba9: Warning # Warning
     e2d09c3d-fd6d-479c-b32a-52667fe689ad: Link # Link
     e7bc80d2-7a8e-4cb6-b565-ea3c4c76d7c6: Medias # Medias
+    e9c4dad0-f52e-4755-b53f-99fb71cab0b3: Default # Default
     e31bcbff-2d8f-4e8b-9559-1f3137c16310: Items # Items
     e89ec6e5-3171-41c7-aa77-02b1c3e3ae8e: Headline # Headline
     e564e547-a62d-4ea0-b2cb-f1d3dbe63b30: Headline # Headline
+    ee99146c-165d-41c6-a71c-9ee7339a9f5c: 'Product description' # Product description
     f0e439c1-51cf-410f-8375-fdb487d77f76: Text # Text
     f02beb95-b907-40b0-8c52-264aae8a3ca5: 'Homepage Hero' # Homepage Hero
     f4f0da20-3f64-4b4d-9c2d-49916f806b76: Links # Links
@@ -195,6 +211,10 @@ plugins:
       additionalCss: "#nav {\r\n    margin-top: 10px;\r\n}\r\n\r\n#nav li a {\r\n    padding-top: 10px;\r\n    padding-left: 10px;\r\n    padding-bottom: 10px;\r\n    padding-right: 10px;\r\n}\r\n\r\n.sidebar nav li a {\r\n    margin-bottom: 5px;\r\n    padding-top: 10px;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n.sidebar .heading>span {\r\n    padding: 0;\r\n}\r\n\r\n#system-info {   \r\n    display: block;\r\n    height: auto;\r\n    background-color: transparent;\r\n    padding: 30px 10px;\r\n}\r\n\r\n#system-info:focus, #system-info:hover {\r\n    background-color: transparent !important;\r\n}\r\n\r\n#site-icon {\r\n    height: auto;\r\n}\r\n\r\n#site-icon img, #site-icon svg {\r\n    height: auto;\r\n    width: auto;\r\n}\r\n\r\n#system-name {\r\n    display: none;\r\n}\r\n\r\n#global-sidebar {\r\n    padding: 8px;\r\n    padding-bottom: 0;\r\n}\r\n\r\n#devmode {\r\n    margin: 0 -8px;\r\n    width: calc(100% + 16px);\r\n}\r\n\r\n#sidebar {\r\n    padding: 0 26px;\r\n}\r\n\r\n.sidebar#sidebar nav {\r\n    padding: 0;\r\n    margin-left: -20px;\r\n    margin-right: -20px;\r\n}\r\n\r\n.sidebar nav {\r\n    padding: 0;\r\n}\r\n\r\nbody.ltr .sidebar nav>ul>li.heading>ul>li>a, body.ltr .sidebar nav>ul>li:not(.heading)>a {\r\n    padding-left: 19px;\r\n}\r\n\r\n#fields-pageModules > .blocks > div:nth-child(odd) {\r\n    border: 1px solid green;\r\n}\r\n\r\n#fields-pageModules > .blocks > div:nth-child(even) {\r\n    border: 1px solid blue;\r\n}\r\n"
       cacheBusting: true
       cssFile: ''
+  craft-shopify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   element-api:
     edition: standard
     enabled: true

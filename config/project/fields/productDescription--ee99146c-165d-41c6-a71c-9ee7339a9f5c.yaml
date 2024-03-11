@@ -1,0 +1,27 @@
+columnSuffix: dvfsfsbt
+contentColumnType: text
+fieldGroup: 9e615391-8b9d-42cc-ad8b-f93ed9276260 # Products
+handle: productDescription
+instructions: 'Enter the product description here.'
+name: 'Product description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

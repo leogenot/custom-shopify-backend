@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b001100c0789c80ebea26d67451b758",
+    "content-hash": "c260b6ebca39a18f51d42080cc80bcef",
     "packages": [
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -1840,12 +1840,16 @@
             "dist": {
                 "type": "path",
                 "url": "plugins/craft-shopify",
-                "reference": "ec92ba72df21c1282eeaebe962c499772c7303a3"
+                "reference": "7f101aba1a6679bbf387b5e47a173268facaf13d"
             },
             "require": {
+                "carlcs/craft-redactorcustomstyles": "^4.0",
                 "craftcms/cms": "^4.7.0",
+                "craftcms/redactor": "^3.0",
+                "nystudio107/craft-code-field": "4.0.12",
                 "php": ">=8.0.2",
-                "phpclassic/php-shopify": "^1.2.9"
+                "phpclassic/php-shopify": "^1.2.9",
+                "spicyweb/craft-neo": "4.0.3"
             },
             "require-dev": {
                 "craftcms/ecs": "dev-main",
@@ -5870,9 +5874,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "leogenot/craft-shopify": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

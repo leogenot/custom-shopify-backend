@@ -1,0 +1,19 @@
+columnSuffix: wfxoncug
+contentColumnType: text
+fieldGroup: db292b46-b1e0-4cad-bfa6-c5aba283fd39 # Products
+handle: shopifyId
+instructions: 'Enter the Shopify ID here.'
+name: 'Shopify Id'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
