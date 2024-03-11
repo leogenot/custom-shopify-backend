@@ -7,10 +7,10 @@
  * 
  */
 
-namespace leo\craftshopify\console\controllers;
+namespace leogenot\craftshopify\console\controllers;
 
 use craft\console\Controller;
-use leo\craftshopify\CraftShopify;
+use leogenot\craftshopify\CraftShopify;
 use yii\console\ExitCode;
 
 

@@ -8,15 +8,15 @@
  */
 
 
-namespace leo\craftshopify\services;
+namespace leogenot\craftshopify\services;
 
 
 use craft\base\Component;
 use craft\helpers\Queue;
 use craft\helpers\StringHelper;
-use leo\craftshopify\jobs\PurgeWebhookResponses;
-use leo\craftshopify\models\WebhookResponse;
-use leo\craftshopify\records\WebhookResponseRecord;
+use leogenot\craftshopify\jobs\PurgeWebhookResponses;
+use leogenot\craftshopify\models\WebhookResponse;
+use leogenot\craftshopify\records\WebhookResponseRecord;
 use Throwable;
 
 class WebhookService extends Component {

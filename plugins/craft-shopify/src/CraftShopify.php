@@ -1,6 +1,6 @@
 <?php
 
-namespace leo\craftshopify;
+namespace leogenot\craftshopify;
 
 use Craft;
 use craft\base\Plugin;
@@ -15,13 +15,13 @@ use craft\services\Fields;
 use craft\services\Utilities;
 use craft\web\twig\variables\CraftVariable;
 use craft\web\UrlManager;
-use leo\craftshopify\elements\Product;
-use leo\craftshopify\models\Settings;
-use leo\craftshopify\services\ProductService;
-use leo\craftshopify\services\ShopifyService;
-use leo\craftshopify\services\WebhookService;
-use leo\craftshopify\utilities\CraftShopifyUtility as CraftShopifyUtilityUtility;
-use leo\craftshopify\utilities\CraftShopifySetup;
+use leogenot\craftshopify\elements\Product;
+use leogenot\craftshopify\models\Settings;
+use leogenot\craftshopify\services\ProductService;
+use leogenot\craftshopify\services\ShopifyService;
+use leogenot\craftshopify\services\WebhookService;
+use leogenot\craftshopify\utilities\CraftShopifyUtility as CraftShopifyUtilityUtility;
+use leogenot\craftshopify\utilities\CraftShopifySetup;
 use yii\base\Event;
 use yii\base\ModelEvent;
 use yii\base\Exception;
@@ -56,7 +56,7 @@ class CraftShopify extends Plugin {
             ->onRemove(ProductService::CONFIG_PRODUCT_FIELDLAYOUT_KEY, [$this->product, 'handleChangedContactFieldLayout']);
 
         if (Craft::$app instanceof ConsoleApplication) {
-            $this->controllerNamespace = 'leo\craftshopify\console\controllers';
+            $this->controllerNamespace = 'leogenot\craftshopify\console\controllers';
         }
 
         Event::on(

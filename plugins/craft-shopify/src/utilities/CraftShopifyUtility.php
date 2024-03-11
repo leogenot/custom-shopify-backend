@@ -8,11 +8,11 @@
  * 
  */
 
-namespace leo\craftshopify\utilities;
+namespace leogenot\craftshopify\utilities;
 
 use DateTime;
-use leo\craftshopify\CraftShopify;
-use leo\craftshopify\assetbundles\craftshopifyutilityutility\CraftShopifyUtilityUtilityAsset;
+use leogenot\craftshopify\CraftShopify;
+use leogenot\craftshopify\assetbundles\craftshopifyutilityutility\CraftShopifyUtilityUtilityAsset;
 
 use Craft;
 use craft\base\Utility;
@@ -62,7 +62,7 @@ class CraftShopifyUtility extends Utility {
      * @inheritdoc
      */
     public static function iconPath(): string {
-        return Craft::getAlias("@leo/craftshopify/assetbundles/craftshopifyutilityutility/dist/img/CraftShopifyUtility-icon.svg");
+        return Craft::getAlias("@leogenot/craftshopify/assetbundles/craftshopifyutilityutility/dist/img/CraftShopifyUtility-icon.svg");
     }
 
     /**

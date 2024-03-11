@@ -1,10 +1,14 @@
 {
-    "name": "leo/craft-shopify",
+    "name": "leogenot/craft-shopify",
     "type": "craft-plugin",
     "require": {
         "php": ">=8.0.2",
         "craftcms/cms": "^4.7.0",
-        "phpclassic/php-shopify": "^1.2.9"
+        "phpclassic/php-shopify": "^1.2.9",
+        "carlcs/craft-redactorcustomstyles": "^4.0",
+        "craftcms/redactor": "^3.0",
+        "nystudio107/craft-code-field": "4.0.12",
+        "spicyweb/craft-neo": "4.0.3"
     },
     "require-dev": {
         "craftcms/ecs": "dev-main",
@@ -12,18 +16,18 @@
     },
     "autoload": {
         "psr-4": {
-            "leo\\craftshopify\\": "src/"
+            "leogenot\\craftshopify\\": "src/"
         }
     },
     "extra": {
         "name": "Craft Shopify",
         "handle": "craft-shopify",
-        "developer": "leo",
+        "developer": "leogenot",
         "documentationUrl": "",
         "components": {
-            "craftShopifyService": "leo\\craftshopify\\services\\CraftShopifyService"
+            "craftShopifyService": "leogenot\\craftshopify\\services\\CraftShopifyService"
         },
-        "class": "leo\\craftshopify\\CraftShopify"
+        "class": "leogenot\\craftshopify\\CraftShopify"
     },
     "scripts": {
         "check-cs": "ecs check --ansi",

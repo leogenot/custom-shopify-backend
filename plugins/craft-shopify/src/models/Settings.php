@@ -9,7 +9,7 @@
  * 
  */
 
-namespace leo\craftshopify\models;
+namespace leogenot\craftshopify\models;
 
 use craft\base\Model;
 use craft\validators\TemplateValidator;

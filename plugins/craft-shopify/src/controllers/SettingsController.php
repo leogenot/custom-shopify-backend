@@ -8,12 +8,12 @@
  */
 
 
-namespace leo\craftshopify\controllers;
+namespace leogenot\craftshopify\controllers;
 
 
 use craft\web\Controller;
-use leo\craftshopify\CraftShopify;
-use leo\craftshopify\models\Settings;
+use leogenot\craftshopify\CraftShopify;
+use leogenot\craftshopify\models\Settings;
 use yii\web\Response;
 
 

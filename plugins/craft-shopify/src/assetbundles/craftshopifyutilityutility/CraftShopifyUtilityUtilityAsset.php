@@ -9,7 +9,7 @@
  * 
  */
 
-namespace leo\craftshopify\assetbundles\craftshopifyutilityutility;
+namespace leogenot\craftshopify\assetbundles\craftshopifyutilityutility;
 
 use Craft;
 use craft\web\AssetBundle;
@@ -24,7 +24,7 @@ class CraftShopifyUtilityUtilityAsset extends AssetBundle {
      * @inheritdoc
      */
     public function init() {
-        $this->sourcePath = "@leo/craftshopify/assetbundles/craftshopifyutilityutility/dist";
+        $this->sourcePath = "@leogenot/craftshopify/assetbundles/craftshopifyutilityutility/dist";
 
         $this->depends = [
             CpAsset::class,

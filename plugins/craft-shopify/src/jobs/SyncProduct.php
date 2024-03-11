@@ -8,15 +8,15 @@
  */
 
 
-namespace leo\craftshopify\jobs;
+namespace leogenot\craftshopify\jobs;
 
 
 use Craft;
 use craft\helpers\Json;
 use craft\queue\BaseJob;
 use Exception;
-use leo\craftshopify\CraftShopify;
-use leo\craftshopify\elements\Product;
+use leogenot\craftshopify\CraftShopify;
+use leogenot\craftshopify\elements\Product;
 use craft\elements\Entry;
 
 

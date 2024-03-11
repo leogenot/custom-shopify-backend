@@ -7,11 +7,11 @@
  * 
  */
 
-namespace leo\craftshopify\elements\db;
+namespace leogenot\craftshopify\elements\db;
 
 use craft\elements\db\ElementQuery;
 use craft\helpers\Db;
-use leo\craftshopify\elements\Product;
+use leogenot\craftshopify\elements\Product;
 
 
 /**

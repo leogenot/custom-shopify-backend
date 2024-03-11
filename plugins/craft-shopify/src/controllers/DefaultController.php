@@ -9,13 +9,13 @@
  * 
  */
 
-namespace leo\craftshopify\controllers;
+namespace leogenot\craftshopify\controllers;
 
 use Craft;
 use craft\helpers\UrlHelper;
 use craft\web\Controller;
-use leo\craftshopify\CraftShopify;
-use leo\craftshopify\elements\Product;
+use leogenot\craftshopify\CraftShopify;
+use leogenot\craftshopify\elements\Product;
 use yii\base\ErrorException;
 use yii\base\Exception;
 use yii\web\BadRequestHttpException;

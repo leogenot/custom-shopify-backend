@@ -1,6 +1,6 @@
 <?php
 
-namespace leo\craftshopify\utilities;
+namespace leogenot\craftshopify\utilities;
 
 
 use Craft;
@@ -22,6 +22,8 @@ use craft\models\Section_SiteSettings;
 use yii\base\Exception;
 use yii\base\InvalidConfigException;
 use yii\db\Schema;
+use nystudio107\codefield;
+use nystudio107\codefield\fields\Code;
 
 /**
  * CraftShopifySetup migration.
@@ -53,6 +55,11 @@ class CraftShopifySetup extends Migration {
             'name' => 'Product description',
             'handle' => 'productDescription',
             'instructions' => 'Enter the product description here.',
+        ],
+        [
+            'class' => Code::class,
+            'name' => 'JSON Data',
+            'handle' => 'productJsonData',
         ],
     ];
 

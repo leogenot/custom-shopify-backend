@@ -8,14 +8,14 @@
  */
 
 
-namespace leo\craftshopify\jobs;
+namespace leogenot\craftshopify\jobs;
 
 
 use Craft;
 use craft\queue\BaseJob;
 use DateTime;
 use Exception;
-use leo\craftshopify\records\WebhookResponseRecord;
+use leogenot\craftshopify\records\WebhookResponseRecord;
 
 
 class PurgeWebhookResponses extends BaseJob {

@@ -4,7 +4,7 @@
  * Service responsible for handling Shopify products in Craft CMS.
  */
 
-namespace leo\craftshopify\services;
+namespace leogenot\craftshopify\services;
 
 use DateTime;
 
@@ -20,11 +20,11 @@ use craft\helpers\Queue;
 use craft\helpers\StringHelper;
 use craft\models\FieldLayout;
 use craft\web\View;
-use leo\craftshopify\CraftShopify;
-use leo\craftshopify\elements\Product;
-use leo\craftshopify\jobs\PushProductData;
-use leo\craftshopify\records\ProductRecord;
-use leo\craftshopify\services\ShopifyService;
+use leogenot\craftshopify\CraftShopify;
+use leogenot\craftshopify\elements\Product;
+use leogenot\craftshopify\jobs\PushProductData;
+use leogenot\craftshopify\records\ProductRecord;
+use leogenot\craftshopify\services\ShopifyService;
 use PHPShopify\Exception\ApiException;
 use PHPShopify\Exception\CurlException;
 use Throwable;

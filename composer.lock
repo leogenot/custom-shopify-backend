@@ -1835,7 +1835,7 @@
             "time": "2019-05-10T02:16:43+00:00"
         },
         {
-            "name": "leo/craft-shopify",
+            "name": "leogenot/craft-shopify",
             "version": "dev-main",
             "dist": {
                 "type": "path",
@@ -1855,16 +1855,16 @@
             "extra": {
                 "name": "Craft Shopify",
                 "handle": "craft-shopify",
-                "developer": "leo",
+                "developer": "leogenot",
                 "documentationUrl": "",
                 "components": {
-                    "craftShopifyService": "leo\\craftshopify\\services\\CraftShopifyService"
+                    "craftShopifyService": "leogenot\\craftshopify\\services\\CraftShopifyService"
                 },
-                "class": "leo\\craftshopify\\CraftShopify"
+                "class": "leogenot\\craftshopify\\CraftShopify"
             },
             "autoload": {
                 "psr-4": {
-                    "leo\\craftshopify\\": "src/"
+                    "leogenot\\craftshopify\\": "src/"
                 }
             },
             "scripts": {
@@ -5871,7 +5871,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "leo/craft-shopify": 20
+        "leogenot/craft-shopify": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

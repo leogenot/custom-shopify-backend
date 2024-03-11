@@ -9,7 +9,7 @@
  * 
  */
 
-namespace leo\craftshopify\assetbundles\indexcpsection;
+namespace leogenot\craftshopify\assetbundles\indexcpsection;
 
 use Craft;
 use craft\web\AssetBundle;
@@ -24,7 +24,7 @@ class IndexCPSectionAsset extends AssetBundle {
      * @inheritdoc
      */
     public function init() {
-        $this->sourcePath = "@leo/craftshopify/assetbundles/indexcpsection/dist";
+        $this->sourcePath = "@leogenot/craftshopify/assetbundles/indexcpsection/dist";
 
         $this->depends = [
             CpAsset::class,

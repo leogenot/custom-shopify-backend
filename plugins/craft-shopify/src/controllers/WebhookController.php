@@ -8,15 +8,15 @@
  */
 
 
-namespace leo\craftshopify\controllers;
+namespace leogenot\craftshopify\controllers;
 
 
 use Craft;
 use craft\errors\ElementNotFoundException;
 use craft\helpers\Json;
 use craft\web\Controller;
-use leo\craftshopify\CraftShopify;
-use leo\craftshopify\models\WebhookResponse;
+use leogenot\craftshopify\CraftShopify;
+use leogenot\craftshopify\models\WebhookResponse;
 use Throwable;
 use yii\base\Action;
 use yii\base\Exception;

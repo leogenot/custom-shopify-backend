@@ -8,7 +8,7 @@
         "craftcms/element-api": "3.0.1.1",
         "craftcms/redactor": "^3.0",
         "doublesecretagency/craft-cpcss": "^2.6",
-        "leo/craft-shopify": "dev-main",
+        "leogenot/craft-shopify": "dev-main",
         "nystudio107/craft-code-field": "4.0.12",
         "sebastianlenz/linkfield": "^2.1",
         "spicyweb/craft-neo": "4.0.3",

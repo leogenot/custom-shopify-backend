@@ -9,7 +9,7 @@
  * 
  */
 
-namespace leo\craftshopify\elements;
+namespace leogenot\craftshopify\elements;
 
 use Craft;
 use craft\base\Element;
@@ -21,10 +21,10 @@ use craft\helpers\Queue;
 use craft\helpers\UrlHelper;
 use craft\models\FieldLayout;
 use Exception;
-use leo\craftshopify\CraftShopify;
-use leo\craftshopify\elements\db\ProductQuery;
-use leo\craftshopify\jobs\PushProductData;
-use leo\craftshopify\records\ProductRecord;
+use leogenot\craftshopify\CraftShopify;
+use leogenot\craftshopify\elements\db\ProductQuery;
+use leogenot\craftshopify\jobs\PushProductData;
+use leogenot\craftshopify\records\ProductRecord;
 
 /**
 

@@ -8,7 +8,7 @@
  */
 
 
-namespace leo\craftshopify\records;
+namespace leogenot\craftshopify\records;
 
 
 use craft\db\ActiveQuery;

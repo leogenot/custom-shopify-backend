@@ -8,7 +8,7 @@
  */
 
 
-namespace leo\craftshopify\controllers;
+namespace leogenot\craftshopify\controllers;
 
 
 use Craft;
@@ -19,9 +19,9 @@ use craft\helpers\StringHelper;
 use craft\helpers\UrlHelper;
 use craft\web\Controller;
 use craft\web\View;
-use leo\craftshopify\CraftShopify;
-use leo\craftshopify\elements\Product;
-use leo\craftshopify\jobs\SyncProduct;
+use leogenot\craftshopify\CraftShopify;
+use leogenot\craftshopify\elements\Product;
+use leogenot\craftshopify\jobs\SyncProduct;
 use PHPShopify\Exception\ApiException;
 use PHPShopify\Exception\CurlException;
 use Throwable;

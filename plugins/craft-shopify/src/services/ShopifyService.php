@@ -5,12 +5,12 @@
  *
  */
 
-namespace leo\craftshopify\services;
+namespace leogenot\craftshopify\services;
 
 use Craft;
 use craft\base\Component;
 use craft\helpers\ArrayHelper;
-use leo\craftshopify\CraftShopify;
+use leogenot\craftshopify\CraftShopify;
 use PHPShopify\ShopifySDK;
 use Exception;
 
