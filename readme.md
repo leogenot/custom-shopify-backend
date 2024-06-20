@@ -12,8 +12,6 @@ The idea is to create a fully synchronized setup to use with any frontend framew
 
 # TODO
 
-- Make it as composer standalone plugin
-- Create product entry type and fields when installing the plugin
 - Add more products data fields
 - Add variants
 - Handle stock synchronization
